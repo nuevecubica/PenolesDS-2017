@@ -21,6 +21,7 @@
 		FADC5A10209CD63400D55C50 /* 04GruposInteres in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A08209CD63400D55C50 /* 04GruposInteres */; };
 		FADC5A11209CD63400D55C50 /* 05Transparencia in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A09209CD63400D55C50 /* 05Transparencia */; };
 		FADC5A13209CD74C00D55C50 /* Contenido.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC5A12209CD74C00D55C50 /* Contenido.swift */; };
+		FADC5A15209D14BD00D55C50 /* 00 Cover in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A14209D14BD00D55C50 /* 00 Cover */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FADC5A08209CD63400D55C50 /* 04GruposInteres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 04GruposInteres; sourceTree = "<group>"; };
 		FADC5A09209CD63400D55C50 /* 05Transparencia */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 05Transparencia; sourceTree = "<group>"; };
 		FADC5A12209CD74C00D55C50 /* Contenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contenido.swift; path = views/Contenido.swift; sourceTree = "<group>"; };
+		FADC5A14209D14BD00D55C50 /* 00 Cover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "00 Cover"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		FADC5A01209CD5C400D55C50 /* recursos */ = {
 			isa = PBXGroup;
 			children = (
+				FADC5A14209D14BD00D55C50 /* 00 Cover */,
 				FADC5A03209CD63400D55C50 /* 01PerfilPenoles */,
 				FADC5A04209CD63400D55C50 /* 02MensajeDirector */,
 				FADC5A07209CD63400D55C50 /* 03Gestion */,
@@ -160,6 +163,7 @@
 				FADC5A0D209CD63400D55C50 /* Recursos in Resources */,
 				FADC5A0C209CD63400D55C50 /* 02MensajeDirector in Resources */,
 				FADC5A0B209CD63400D55C50 /* 01PerfilPenoles in Resources */,
+				FADC5A15209D14BD00D55C50 /* 00 Cover in Resources */,
 				FADC5A0A209CD63400D55C50 /* 07DesempenoAmbiental in Resources */,
 				FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */,
 				FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */,
@@ -327,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48ZZ923FW9;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48ZZ923FW9;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
