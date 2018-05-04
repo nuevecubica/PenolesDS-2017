@@ -32,7 +32,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="HBU-v5-07Y" kind="show" identifier="goRight" id="KpA-B0-f90"/>
+                        <segue destination="HBU-v5-07Y" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KpA-B0-f90"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,7 +58,7 @@
                         <viewLayoutGuide key="safeArea" id="fZQ-Qx-jlu"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goLeft" id="BrT-Bg-R0J"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BrT-Bg-R0J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJS-Pt-a9b" userLabel="First Responder" sceneMemberID="firstResponder"/>

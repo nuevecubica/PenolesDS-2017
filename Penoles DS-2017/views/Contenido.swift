@@ -13,7 +13,12 @@ class Contenido: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		// Do any additional setup after loading the view.
+		
+		// SWIPE RIGHT
+		let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+		rightSwipe.direction = UISwipeGestureRecognizerDirection.right
+		self.view.addGestureRecognizer(rightSwipe)
     }
 
     override func didReceiveMemoryWarning() {
