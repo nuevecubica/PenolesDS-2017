@@ -13,14 +13,7 @@
 		FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E6209CD42600D55C50 /* Assets.xcassets */; };
 		FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E8209CD42600D55C50 /* LaunchScreen.storyboard */; };
 		FADC5A13209CD74C00D55C50 /* Contenido.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC5A12209CD74C00D55C50 /* Contenido.swift */; };
-		FADC5A1E209D1D6700D55C50 /* 07DesempenoAmbiental in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A16209D1D6700D55C50 /* 07DesempenoAmbiental */; };
-		FADC5A1F209D1D6700D55C50 /* 01PerfilPenoles in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A17209D1D6700D55C50 /* 01PerfilPenoles */; };
-		FADC5A20209D1D6700D55C50 /* 02MensajeDirector in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A18209D1D6700D55C50 /* 02MensajeDirector */; };
-		FADC5A21209D1D6700D55C50 /* 06DesempenoEconomico in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A19209D1D6700D55C50 /* 06DesempenoEconomico */; };
-		FADC5A22209D1D6700D55C50 /* 00 Cover in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A1A209D1D6700D55C50 /* 00 Cover */; };
-		FADC5A23209D1D6700D55C50 /* 03Gestion in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A1B209D1D6700D55C50 /* 03Gestion */; };
-		FADC5A24209D1D6700D55C50 /* 04GruposInteres in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A1C209D1D6700D55C50 /* 04GruposInteres */; };
-		FADC5A25209D1D6700D55C50 /* 05Transparencia in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A1D209D1D6700D55C50 /* 05Transparencia */; };
+		FADC5A2B209D1EAA00D55C50 /* mainCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FADC5A2D209D1EAA00D55C50 /* mainCover.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +25,7 @@
 		FADC59E9209CD42600D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC59EB209CD42600D55C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADC5A12209CD74C00D55C50 /* Contenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contenido.swift; path = views/Contenido.swift; sourceTree = "<group>"; };
-		FADC5A16209D1D6700D55C50 /* 07DesempenoAmbiental */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 07DesempenoAmbiental; sourceTree = "<group>"; };
-		FADC5A17209D1D6700D55C50 /* 01PerfilPenoles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 01PerfilPenoles; sourceTree = "<group>"; };
-		FADC5A18209D1D6700D55C50 /* 02MensajeDirector */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 02MensajeDirector; sourceTree = "<group>"; };
-		FADC5A19209D1D6700D55C50 /* 06DesempenoEconomico */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 06DesempenoEconomico; sourceTree = "<group>"; };
-		FADC5A1A209D1D6700D55C50 /* 00 Cover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "00 Cover"; sourceTree = "<group>"; };
-		FADC5A1B209D1D6700D55C50 /* 03Gestion */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 03Gestion; sourceTree = "<group>"; };
-		FADC5A1C209D1D6700D55C50 /* 04GruposInteres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 04GruposInteres; sourceTree = "<group>"; };
-		FADC5A1D209D1D6700D55C50 /* 05Transparencia */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 05Transparencia; sourceTree = "<group>"; };
+		FADC5A2C209D1EAA00D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/mainCover.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +58,7 @@
 		FADC59DE209CD42400D55C50 /* Penoles DS-2017 */ = {
 			isa = PBXGroup;
 			children = (
-				FADC5A01209CD5C400D55C50 /* recursos */,
+				FADC5A28209D1E2D00D55C50 /* Resources */,
 				FADC59DF209CD42400D55C50 /* AppDelegate.swift */,
 				FADC59E1209CD42400D55C50 /* ViewController.swift */,
 				FADC59E3209CD42400D55C50 /* Main.storyboard */,
@@ -84,19 +70,12 @@
 			path = "Penoles DS-2017";
 			sourceTree = "<group>";
 		};
-		FADC5A01209CD5C400D55C50 /* recursos */ = {
+		FADC5A28209D1E2D00D55C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FADC5A1A209D1D6700D55C50 /* 00 Cover */,
-				FADC5A17209D1D6700D55C50 /* 01PerfilPenoles */,
-				FADC5A18209D1D6700D55C50 /* 02MensajeDirector */,
-				FADC5A1B209D1D6700D55C50 /* 03Gestion */,
-				FADC5A1C209D1D6700D55C50 /* 04GruposInteres */,
-				FADC5A1D209D1D6700D55C50 /* 05Transparencia */,
-				FADC5A19209D1D6700D55C50 /* 06DesempenoEconomico */,
-				FADC5A16209D1D6700D55C50 /* 07DesempenoAmbiental */,
+				FADC5A2D209D1EAA00D55C50 /* mainCover.jpg */,
 			);
-			path = recursos;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,17 +136,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADC5A21209D1D6700D55C50 /* 06DesempenoEconomico in Resources */,
-				FADC5A20209D1D6700D55C50 /* 02MensajeDirector in Resources */,
-				FADC5A1F209D1D6700D55C50 /* 01PerfilPenoles in Resources */,
-				FADC5A1E209D1D6700D55C50 /* 07DesempenoAmbiental in Resources */,
+				FADC5A2B209D1EAA00D55C50 /* mainCover.jpg in Resources */,
 				FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */,
 				FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */,
-				FADC5A23209D1D6700D55C50 /* 03Gestion in Resources */,
 				FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */,
-				FADC5A25209D1D6700D55C50 /* 05Transparencia in Resources */,
-				FADC5A22209D1D6700D55C50 /* 00 Cover in Resources */,
-				FADC5A24209D1D6700D55C50 /* 04GruposInteres in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +173,14 @@
 				FADC59E9209CD42600D55C50 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FADC5A2D209D1EAA00D55C50 /* mainCover.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADC5A2C209D1EAA00D55C50 /* Base */,
+			);
+			name = mainCover.jpg;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
