@@ -1,14 +1,14 @@
 //
-//  Contenido.swift
+//  perfilPenoles.swift
 //  Penoles DS-2017
 //
-//  Created by alex vaught on 5/4/18.
+//  Created by alex vaught on 5/7/18.
 //  Copyright © 2018 nuevecubica. All rights reserved.
 //
 
 import UIKit
 
-class Contenido: UIViewController {
+class perfilPenoles: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

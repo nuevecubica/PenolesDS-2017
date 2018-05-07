@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAD4886820A0BC680020E4E7 /* perfilPenoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4886720A0BC680020E4E7 /* perfilPenoles.swift */; };
+		FAD4886A20A0C7AC0020E4E7 /* segueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */; };
 		FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59DF209CD42400D55C50 /* AppDelegate.swift */; };
 		FADC59E2209CD42400D55C50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59E1209CD42400D55C50 /* ViewController.swift */; };
 		FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E3209CD42400D55C50 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAD4886720A0BC680020E4E7 /* perfilPenoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfilPenoles.swift; sourceTree = "<group>"; };
+		FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueAnimation.swift; sourceTree = "<group>"; };
 		FADC59DC209CD42400D55C50 /* Penoles DS-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penoles DS-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC59DF209CD42400D55C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADC59E1209CD42400D55C50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +41,7 @@
 		FADC59E6209CD42600D55C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADC59E9209CD42600D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC59EB209CD42600D55C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FADC5A12209CD74C00D55C50 /* Contenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contenido.swift; path = views/Contenido.swift; sourceTree = "<group>"; };
+		FADC5A12209CD74C00D55C50 /* Contenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contenido.swift; sourceTree = "<group>"; };
 		FADC5A2C209D1EAA00D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/mainCover.jpg; sourceTree = "<group>"; };
 		FADC5A30209D205600D55C50 /* 04-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-2.png"; sourceTree = "<group>"; };
 		FADC5A31209D205600D55C50 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
@@ -65,6 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAD4886520A0B8E40020E4E7 /* Contenido */ = {
+			isa = PBXGroup;
+			children = (
+				FADC5A35209D205700D55C50 /* 01.png */,
+				FADC5A12209CD74C00D55C50 /* Contenido.swift */,
+			);
+			path = Contenido;
+			sourceTree = "<group>";
+		};
+		FAD4886620A0BA7C0020E4E7 /* 02 Mensaje del Director */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02 Mensaje del Director";
+			sourceTree = "<group>";
+		};
+		FAD4886B20A0C7CF0020E4E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */,
+			);
+			name = Classes;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FADC59D3209CD42400D55C50 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +113,7 @@
 		FADC59DE209CD42400D55C50 /* Penoles DS-2017 */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4886B20A0C7CF0020E4E7 /* Classes */,
 				FADC5A28209D1E2D00D55C50 /* Resources */,
 				FADC59DF209CD42400D55C50 /* AppDelegate.swift */,
 				FADC59E1209CD42400D55C50 /* ViewController.swift */,
@@ -91,7 +121,6 @@
 				FADC59E6209CD42600D55C50 /* Assets.xcassets */,
 				FADC59E8209CD42600D55C50 /* LaunchScreen.storyboard */,
 				FADC59EB209CD42600D55C50 /* Info.plist */,
-				FADC5A12209CD74C00D55C50 /* Contenido.swift */,
 			);
 			path = "Penoles DS-2017";
 			sourceTree = "<group>";
@@ -100,7 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				FADC5A2E209D201000D55C50 /* 00 cover */,
+				FAD4886520A0B8E40020E4E7 /* Contenido */,
 				FADC5A2F209D202B00D55C50 /* 01 PerfilPenoles */,
+				FAD4886620A0BA7C0020E4E7 /* 02 Mensaje del Director */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -116,7 +147,6 @@
 		FADC5A2F209D202B00D55C50 /* 01 PerfilPenoles */ = {
 			isa = PBXGroup;
 			children = (
-				FADC5A35209D205700D55C50 /* 01.png */,
 				FADC5A31209D205600D55C50 /* 02.png */,
 				FADC5A39209D205700D55C50 /* 03.png */,
 				FADC5A34209D205700D55C50 /* 04-1.png */,
@@ -129,6 +159,7 @@
 				FADC5A36209D205700D55C50 /* 04-8.png */,
 				FADC5A3C209D205800D55C50 /* 04-9.png */,
 				FADC5A38209D205700D55C50 /* 05.png */,
+				FAD4886720A0BC680020E4E7 /* perfilPenoles.swift */,
 			);
 			path = "01 PerfilPenoles";
 			sourceTree = "<group>";
@@ -220,6 +251,8 @@
 			files = (
 				FADC59E2209CD42400D55C50 /* ViewController.swift in Sources */,
 				FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */,
+				FAD4886A20A0C7AC0020E4E7 /* segueAnimation.swift in Sources */,
+				FAD4886820A0BC680020E4E7 /* perfilPenoles.swift in Sources */,
 				FADC5A13209CD74C00D55C50 /* Contenido.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
