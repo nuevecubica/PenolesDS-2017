@@ -15,7 +15,20 @@ class ViewController: UIViewController {
 		
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		
+		func assignbackground(){
+			let background = UIImage(named: "mainCover")
+			
+			var imageView : UIImageView!
+			imageView = UIImageView(frame: view.bounds)
+			imageView.contentMode =  UIViewContentMode.scaleAspectFill
+			imageView.clipsToBounds = true
+			imageView.image = background
+			imageView.center = view.center
+			view.addSubview(imageView)
+			self.view.sendSubview(toBack: imageView)
+		}
 		// SWIPE LEFT
 		let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
 		leftSwipe.direction = UISwipeGestureRecognizerDirection.left

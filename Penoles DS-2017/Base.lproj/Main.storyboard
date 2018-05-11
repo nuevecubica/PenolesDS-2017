@@ -17,18 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainCover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SZ7-ph-NxE">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="SZ7-ph-NxE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1LX-6P-pNU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZ7-ph-NxE" secondAttribute="trailing" id="Qal-LR-bUm"/>
-                            <constraint firstItem="SZ7-ph-NxE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qom-pt-XHD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SZ7-ph-NxE" secondAttribute="bottom" id="ygb-vW-Q0i"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -54,9 +43,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fZQ-Qx-jlu"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Na6-4Q-E9m"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BrT-Bg-R0J"/>
                         <segue destination="7HL-WW-NZ4" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lmD-KT-Giz"/>
@@ -64,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJS-Pt-a9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="36"/>
+            <point key="canvasLocation" x="765" y="136"/>
         </scene>
         <!--Perfil Penoles-->
         <scene sceneID="6F5-Bh-Vq0">
@@ -73,17 +63,7 @@
                     <view key="view" contentMode="scaleToFill" id="l6Q-Rt-DfN">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FGc-Tp-X7Q">
-                                <rect key="frame" x="39" y="43" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.30980392159999998" green="0.52156862749999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="7Si-nn-NzF"/>
                     </view>
                     <connections>
@@ -92,14 +72,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bN-Uf-rTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="36"/>
+            <point key="canvasLocation" x="1405" y="136"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="mainCover.jpg" width="2732" height="2111"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lmD-KT-Giz"/>
-        <segue reference="Deo-9p-sk5"/>
+        <segue reference="KpA-B0-f90"/>
     </inferredMetricsTieBreakers>
 </document>

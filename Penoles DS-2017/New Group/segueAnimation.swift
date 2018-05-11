@@ -25,7 +25,7 @@ class segueAnimation: UIStoryboardSegue {
 		UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
 			toViewController.view.transform = CGAffineTransform.identity
 		}, completion: { success in
-			fromViewController.present(toViewController, animated: false, completion: nill)
+			fromViewController.present(toViewController, animated: false, completion: nil)
 			
 		})
 	}
