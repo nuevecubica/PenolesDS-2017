@@ -38,13 +38,14 @@ class P01_pag02: UIViewController {
 		
 		// RUN BACKGROUND
 		//assignbackground()
-		
+		/*
 		let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
 		label.center = CGPoint(x: 160, y: 285)
 		label.textAlignment = .center
 		label.text = "PERFILES PAGE Mapa"
 		label.textColor = UIColor(red:255,green:0,blue:0,alpha:1)
 		self.view.addSubview(label)
+*/
     }
 
     override func didReceiveMemoryWarning() {
