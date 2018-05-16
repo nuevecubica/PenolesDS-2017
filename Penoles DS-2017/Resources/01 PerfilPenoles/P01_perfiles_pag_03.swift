@@ -1,19 +1,19 @@
 //
-//  P01_pag03.swift
+//  P01_perfiles_pag_03.swift
 //  Penoles DS-2017
 //
-//  Created by alex vaught on 5/14/18.
+//  Created by alex vaught on 5/16/18.
 //  Copyright © 2018 nuevecubica. All rights reserved.
 //
 
 import UIKit
 
-class P01_pag03: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class P01_perfiles_pag_03: UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		// Do any additional setup after loading the view.
+		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
 			let background = UIImage(named: "perfil_pag3")
@@ -38,25 +38,29 @@ class P01_pag03: UIViewController {
 		
 		// RUN BACKGROUND
 		assignbackground()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+		
+		
+		
+	}
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+	
 	// REMOVE STATUS BAR
 	override var prefersStatusBarHidden: Bool{
 		return true
 	}
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	
+	/*
+	// MARK: - Navigation
+	
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+	// Get the new view controller using segue.destinationViewController.
+	// Pass the selected object to the new view controller.
+	}
+	*/
+	
 }

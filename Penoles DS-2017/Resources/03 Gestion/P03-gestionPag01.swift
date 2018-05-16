@@ -1,22 +1,28 @@
 //
-//  P01_pag04.swift
+//  P03-gestionPag01.swift
 //  Penoles DS-2017
 //
-//  Created by alex vaught on 5/14/18.
+//  Created by alex vaught on 5/16/18.
 //  Copyright © 2018 nuevecubica. All rights reserved.
 //
 
 import UIKit
 
-class P01_pag04: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class P03_gestionPag01: UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+		label.center = CGPoint(x: 160, y: 285)
+		label.textAlignment = .center
+		label.text = "PERFILES PAGE 1"
+		label.textColor = UIColor(red:0,green:0,blue:0,alpha:1)
+		self.view.addSubview(label)
+		// Do any additional setup after loading the view.
+		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
-			let background = UIImage(named: "perfil_pag4")
+			let background = UIImage(named: "gestion_pag1")
 			
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)
@@ -38,25 +44,29 @@ class P01_pag04: UIViewController {
 		
 		// RUN BACKGROUND
 		assignbackground()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+		
+		
+		
+	}
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+	
 	// REMOVE STATUS BAR
 	override var prefersStatusBarHidden: Bool{
 		return true
 	}
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	
+	/*
+	// MARK: - Navigation
+	
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+	// Get the new view controller using segue.destinationViewController.
+	// Pass the selected object to the new view controller.
+	}
+	*/
+	
 }

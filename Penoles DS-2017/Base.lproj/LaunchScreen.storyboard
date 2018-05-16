@@ -18,18 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dssd - nueve cubica 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-ol-2Bd">
-                                <rect key="frame" x="0.0" y="707" width="1034" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_penoles_verde" translatesAutoresizingMaskIntoConstraints="NO" id="jxV-pg-imd">
+                                <rect key="frame" x="362" y="234" width="300" height="300"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.25490196079999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mqx-ol-2Bd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="4s9-mu-VTK"/>
-                            <constraint firstItem="mqx-ol-2Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XS4-y7-8oj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mqx-ol-2Bd" secondAttribute="bottom" constant="40" id="mtu-Io-JGK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jxV-pg-imd" secondAttribute="bottom" constant="234" id="66S-od-sbO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jxV-pg-imd" secondAttribute="trailing" constant="362" id="M3U-Ll-mca"/>
+                            <constraint firstItem="jxV-pg-imd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="Xx7-Xb-aDU"/>
+                            <constraint firstItem="jxV-pg-imd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="362" id="kPz-e0-yuN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,4 +37,7 @@
             <point key="canvasLocation" x="52.734375" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_penoles_verde" width="300" height="300"/>
+    </resources>
 </document>

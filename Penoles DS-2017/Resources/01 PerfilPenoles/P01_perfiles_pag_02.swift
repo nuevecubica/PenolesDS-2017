@@ -1,22 +1,22 @@
 //
-//  P02_pag01.swift
+//  P01_perfiles_pag_02.swift
 //  Penoles DS-2017
 //
-//  Created by alex vaught on 5/14/18.
+//  Created by alex vaught on 5/16/18.
 //  Copyright © 2018 nuevecubica. All rights reserved.
 //
 
 import UIKit
 
-class P02_pag01: UIViewController {
-
+class P01_perfiles_pag_02: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
+		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
-			let background = UIImage(named: "mensaje_director")
+			let background = UIImage(named: "perfil_pag2")
 			
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)
@@ -28,24 +28,26 @@ class P02_pag01: UIViewController {
 			self.view.sendSubview(toBack: imageView)
 		}
 		// SWIPE LEFT
-		//let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-		//leftSwipe.direction = UISwipeGestureRecognizerDirection.left
-		//self.view.addGestureRecognizer(leftSwipe)
+		let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+		leftSwipe.direction = UISwipeGestureRecognizerDirection.left
+		self.view.addGestureRecognizer(leftSwipe)
 		// SWIPE RIGHT
 		let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
 		rightSwipe.direction = UISwipeGestureRecognizerDirection.right
 		self.view.addGestureRecognizer(rightSwipe)
 		
 		// RUN BACKGROUND
-		//assignbackground()
+		assignbackground()
 		
-
+		
+		
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
+	
 	// REMOVE STATUS BAR
 	override var prefersStatusBarHidden: Bool{
 		return true
