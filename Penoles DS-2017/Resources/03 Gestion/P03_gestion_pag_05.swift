@@ -1,5 +1,5 @@
 //
-//  P03_gestion_pag_01.swift
+//  P03_gestion_pag_05.swift
 //  Penoles DS-2017
 //
 //  Created by alex vaught on 5/16/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class P03_gestion_pag_01: UIViewController {
+class P03_gestion_pag_05: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -16,7 +16,7 @@ class P03_gestion_pag_01: UIViewController {
 		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
-			let background = UIImage(named: "gestion_pag1")
+			let background = UIImage(named: "gestion_pag5")
 			
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)

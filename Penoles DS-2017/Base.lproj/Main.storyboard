@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="3945" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--gestion pag02-->
         <scene sceneID="Ry9-PE-zZo">
             <objects>
-                <viewController id="oCZ-no-i1E" sceneMemberID="viewController">
+                <viewController id="oCZ-no-i1E" customClass="P03_gestion_pag_02" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pCd-Ff-Vp4">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,33 +186,118 @@
                     </view>
                     <connections>
                         <segue destination="R5h-YP-kYB" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="h58-51-ucD"/>
+                        <segue destination="cBm-LW-chH" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5Hn-UK-OZL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPB-3s-xbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4571" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--gestion pag03-->
         <scene sceneID="BM5-94-2vX">
             <objects>
-                <viewController id="cBm-LW-chH" sceneMemberID="viewController">
+                <viewController id="cBm-LW-chH" customClass="P03_gestion_pag_03" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLQ-Pn-idf">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QeE-lv-1Mh"/>
                     </view>
+                    <connections>
+                        <segue destination="oCZ-no-i1E" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Tu1-Gb-eTu"/>
+                        <segue destination="yIE-0E-ddA" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5dU-9y-CJq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzc-EH-3oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5200" y="136"/>
+        </scene>
+        <!--gestion pag04-->
+        <scene sceneID="pyv-M0-mdj">
+            <objects>
+                <viewController id="yIE-0E-ddA" customClass="P03_gestion_pag_04" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l8y-SL-mZg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eFZ-eM-Es4"/>
+                    </view>
+                    <connections>
+                        <segue destination="cBm-LW-chH" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Mhc-fI-4iS"/>
+                        <segue destination="ajM-LA-4wB" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="FQt-fo-sl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeF-vT-J13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5824" y="136"/>
+        </scene>
+        <!--gestion pag05-->
+        <scene sceneID="yGe-ru-o43">
+            <objects>
+                <viewController id="ajM-LA-4wB" customClass="P03_gestion_pag_05" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1r-Je-Vt9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KeF-Zx-4QH"/>
+                    </view>
+                    <connections>
+                        <segue destination="yIE-0E-ddA" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="oEl-Pf-EEK"/>
+                        <segue destination="rVm-ag-cMY" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fpv-q7-vsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZX-gC-g8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6448" y="136"/>
+        </scene>
+        <!--gestion pag06-->
+        <scene sceneID="Arq-n3-MdM">
+            <objects>
+                <viewController id="rVm-ag-cMY" customClass="P03_gestion_pag_06" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBJ-lv-L67">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qcw-6B-GZi"/>
+                    </view>
+                    <connections>
+                        <segue destination="ajM-LA-4wB" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0vd-tW-0f8"/>
+                        <segue destination="f46-oa-9sY" kind="presentation" identifier="goRight" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="3uH-1X-9wg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqn-KV-fRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7073" y="136"/>
+        </scene>
+        <!--gestion pag07-->
+        <scene sceneID="c3j-bX-0WL">
+            <objects>
+                <viewController id="f46-oa-9sY" customClass="P03_gestion_pag_07" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hod-FE-2M1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bhq-qd-CG9"/>
+                    </view>
+                    <connections>
+                        <segue destination="rVm-ag-cMY" kind="presentation" identifier="goLeft" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TKZ-i0-575"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLt-wj-LGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7702" y="136"/>
         </scene>
     </scenes>
     <resources>
         <image name="mensaje_director" width="1024" height="2444"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zTD-E0-5vu"/>
+        <segue reference="TKZ-i0-575"/>
+        <segue reference="0vd-tW-0f8"/>
+        <segue reference="oEl-Pf-EEK"/>
+        <segue reference="Mhc-fI-4iS"/>
+        <segue reference="Tu1-Gb-eTu"/>
+        <segue reference="h58-51-ucD"/>
         <segue reference="jIF-H3-B0Q"/>
         <segue reference="lrE-qb-GqA"/>
         <segue reference="RS6-GD-bid"/>
