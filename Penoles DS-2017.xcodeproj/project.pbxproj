@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA61A9D320AC7D1400FB5F80 /* P03-gestionPag01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D220AC7D1400FB5F80 /* P03-gestionPag01.swift */; };
 		FA61A9D520AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D420AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift */; };
 		FA61A9D720AC7F7100FB5F80 /* P01_perfiles_pag_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D620AC7F7100FB5F80 /* P01_perfiles_pag_02.swift */; };
 		FA61A9D920AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D820AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA61A9D220AC7D1400FB5F80 /* P03-gestionPag01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "P03-gestionPag01.swift"; sourceTree = "<group>"; };
 		FA61A9D420AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_01.swift; sourceTree = "<group>"; };
 		FA61A9D620AC7F7100FB5F80 /* P01_perfiles_pag_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_02.swift; sourceTree = "<group>"; };
 		FA61A9D820AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_03.swift; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 		FA61A9CF20AC7C6200FB5F80 /* 03 Gestion */ = {
 			isa = PBXGroup;
 			children = (
-				FA61A9D220AC7D1400FB5F80 /* P03-gestionPag01.swift */,
 				FA61A9DE20AC82CD00FB5F80 /* P03_gestion_pag_01.swift */,
 			);
 			path = "03 Gestion";
@@ -223,7 +220,6 @@
 				FA61A9D920AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift in Sources */,
 				FA61A9D520AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift in Sources */,
 				FA78786720AA3F9600E83BBB /* P00_Cover.swift in Sources */,
-				FA61A9D320AC7D1400FB5F80 /* P03-gestionPag01.swift in Sources */,
 				FA61A9DD20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift in Sources */,
 				FAD4886A20A0C7AC0020E4E7 /* segueAnimation.swift in Sources */,
 				FA61A9DB20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift in Sources */,
