@@ -17,7 +17,6 @@ class P03_gestion_pag_01: UIViewController {
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
 			let background = UIImage(named: "gestion_pag1")
-			
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)
 			imageView.contentMode =  UIViewContentMode.scaleAspectFill

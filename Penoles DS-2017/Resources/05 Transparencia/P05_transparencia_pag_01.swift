@@ -1,5 +1,5 @@
 //
-//  P03_gestion_pag_02.swift
+//  P05_transparencia_pag_01.swift
 //  Penoles DS-2017
 //
 //  Created by alex vaught on 5/16/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class P03_gestion_pag_02: UIViewController {
+class P05_transparencia_pag_01: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -16,7 +16,7 @@ class P03_gestion_pag_02: UIViewController {
 		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
-			let background = UIImage(named: "gestion_pag2")
+			let background = UIImage(named: "trasparencia_pag1")
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)
 			imageView.contentMode =  UIViewContentMode.scaleAspectFill

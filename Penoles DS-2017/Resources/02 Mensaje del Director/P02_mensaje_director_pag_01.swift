@@ -9,24 +9,33 @@
 import UIKit
 
 class P02_mensaje_director_pag_01: UIViewController {
+	@IBOutlet weak var mainScrollerView: UIScrollView!
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
 		
+		
+		
+		
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
 			let background = UIImage(named: "mensaje_director")
+				mainScrollerView.contentSize.height = CGFloat((background?.size.height)!)
 			
 			var imageView : UIImageView!
-			imageView = UIImageView(frame: view.bounds)
+			imageView = UIImageView(frame: mainScrollerView.bounds)
 			imageView.contentMode =  UIViewContentMode.scaleAspectFill
 			imageView.clipsToBounds = true
 			imageView.image = background
 			imageView.center = view.center
-			view.addSubview(imageView)
-			self.view.sendSubview(toBack: imageView)
+
+			mainScrollerView.addSubview(imageView)
+		
+			
+			
 		}
+		
 		// SWIPE LEFT
 		let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
 		leftSwipe.direction = UISwipeGestureRecognizerDirection.left
@@ -37,7 +46,7 @@ class P02_mensaje_director_pag_01: UIViewController {
 		self.view.addGestureRecognizer(rightSwipe)
 		
 		// RUN BACKGROUND
-		//assignbackground()
+		assignbackground()
 		
 		
 		

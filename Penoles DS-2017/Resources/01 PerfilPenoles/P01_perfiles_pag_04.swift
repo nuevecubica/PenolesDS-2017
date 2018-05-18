@@ -17,7 +17,6 @@ class P01_perfiles_pag_04: UIViewController {
 		// ASSING A BACKGROUND IMAGE TO THE VIEW
 		func assignbackground(){
 			let background = UIImage(named: "perfil_pag4")
-			
 			var imageView : UIImageView!
 			imageView = UIImageView(frame: view.bounds)
 			imageView.contentMode =  UIViewContentMode.scaleAspectFill

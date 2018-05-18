@@ -25,6 +25,9 @@
 		FAFB84F520AC886700EAC6C4 /* P03_gestion_pag_05.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F420AC886700EAC6C4 /* P03_gestion_pag_05.swift */; };
 		FAFB84F720AC888C00EAC6C4 /* P03_gestion_pag_06.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F620AC888C00EAC6C4 /* P03_gestion_pag_06.swift */; };
 		FAFB84F920AC88B000EAC6C4 /* P03_gestion_pag_07.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F820AC88B000EAC6C4 /* P03_gestion_pag_07.swift */; };
+		FAFB84FC20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */; };
+		FAFB84FE20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */; };
+		FAFB850120AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		FAFB84F420AC886700EAC6C4 /* P03_gestion_pag_05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_05.swift; sourceTree = "<group>"; };
 		FAFB84F620AC888C00EAC6C4 /* P03_gestion_pag_06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_06.swift; sourceTree = "<group>"; };
 		FAFB84F820AC88B000EAC6C4 /* P03_gestion_pag_07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_07.swift; sourceTree = "<group>"; };
+		FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04_grupos_pag_01.swift; sourceTree = "<group>"; };
+		FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04_grupos_pag_02.swift; sourceTree = "<group>"; };
+		FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P05_transparencia_pag_01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				FAD4886620A0BA7C0020E4E7 /* 02 Mensaje del Director */,
 				FA61A9CF20AC7C6200FB5F80 /* 03 Gestion */,
 				FAFB84FA20AC8E0C00EAC6C4 /* 04 Grupos */,
+				FAFB84FF20AC8EE300EAC6C4 /* 05 Transparencia */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -156,8 +163,18 @@
 		FAFB84FA20AC8E0C00EAC6C4 /* 04 Grupos */ = {
 			isa = PBXGroup;
 			children = (
+				FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */,
+				FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */,
 			);
 			path = "04 Grupos";
+			sourceTree = "<group>";
+		};
+		FAFB84FF20AC8EE300EAC6C4 /* 05 Transparencia */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */,
+			);
+			path = "05 Transparencia";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			files = (
 				FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */,
 				FA61A9D920AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift in Sources */,
+				FAFB84FE20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift in Sources */,
 				FA61A9D520AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift in Sources */,
 				FAFB84F520AC886700EAC6C4 /* P03_gestion_pag_05.swift in Sources */,
 				FAFB84EF20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift in Sources */,
@@ -243,7 +261,9 @@
 				FAFB84F120AC880500EAC6C4 /* P03_gestion_pag_03.swift in Sources */,
 				FA61A9DB20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift in Sources */,
 				FAFB84F920AC88B000EAC6C4 /* P03_gestion_pag_07.swift in Sources */,
+				FAFB84FC20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift in Sources */,
 				FA61A9DF20AC82CD00FB5F80 /* P03_gestion_pag_01.swift in Sources */,
+				FAFB850120AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift in Sources */,
 				FAFB84F720AC888C00EAC6C4 /* P03_gestion_pag_06.swift in Sources */,
 				FA61A9D720AC7F7100FB5F80 /* P01_perfiles_pag_02.swift in Sources */,
 			);
@@ -390,14 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48ZZ923FW9;
+				DEVELOPMENT_TEAM = F4CBL5BY33;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nuevecubica.Penoles-DS-2017";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuevecubica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -409,14 +429,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48ZZ923FW9;
+				DEVELOPMENT_TEAM = F4CBL5BY33;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nuevecubica.Penoles-DS-2017";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuevecubica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
