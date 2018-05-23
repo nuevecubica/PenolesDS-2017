@@ -7,53 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA61A9D520AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D420AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift */; };
-		FA61A9D720AC7F7100FB5F80 /* P01_perfiles_pag_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D620AC7F7100FB5F80 /* P01_perfiles_pag_02.swift */; };
-		FA61A9D920AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9D820AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift */; };
-		FA61A9DB20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9DA20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift */; };
-		FA61A9DD20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9DC20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift */; };
-		FA61A9DF20AC82CD00FB5F80 /* P03_gestion_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A9DE20AC82CD00FB5F80 /* P03_gestion_pag_01.swift */; };
-		FA78786720AA3F9600E83BBB /* P00_Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78786620AA3F9600E83BBB /* P00_Cover.swift */; };
-		FAD4886A20A0C7AC0020E4E7 /* segueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */; };
+		CB1C440220B4DECE00A4300D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440120B4DECE00A4300D /* PageViewController.swift */; };
+		CB1C440420B4E15300A4300D /* PageNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */; };
+		CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440520B4FBBA00A4300D /* MapViewController.swift */; };
 		FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59DF209CD42400D55C50 /* AppDelegate.swift */; };
 		FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E3209CD42400D55C50 /* Main.storyboard */; };
 		FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E6209CD42600D55C50 /* Assets.xcassets */; };
 		FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E8209CD42600D55C50 /* LaunchScreen.storyboard */; };
-		FAFB84EF20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84EE20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift */; };
-		FAFB84F120AC880500EAC6C4 /* P03_gestion_pag_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F020AC880500EAC6C4 /* P03_gestion_pag_03.swift */; };
-		FAFB84F320AC882600EAC6C4 /* P03_gestion_pag_04.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F220AC882600EAC6C4 /* P03_gestion_pag_04.swift */; };
-		FAFB84F520AC886700EAC6C4 /* P03_gestion_pag_05.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F420AC886700EAC6C4 /* P03_gestion_pag_05.swift */; };
-		FAFB84F720AC888C00EAC6C4 /* P03_gestion_pag_06.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F620AC888C00EAC6C4 /* P03_gestion_pag_06.swift */; };
-		FAFB84F920AC88B000EAC6C4 /* P03_gestion_pag_07.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84F820AC88B000EAC6C4 /* P03_gestion_pag_07.swift */; };
-		FAFB84FC20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */; };
-		FAFB84FE20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */; };
-		FAFB850120AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA61A9D420AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_01.swift; sourceTree = "<group>"; };
-		FA61A9D620AC7F7100FB5F80 /* P01_perfiles_pag_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_02.swift; sourceTree = "<group>"; };
-		FA61A9D820AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_03.swift; sourceTree = "<group>"; };
-		FA61A9DA20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01_perfiles_pag_04.swift; sourceTree = "<group>"; };
-		FA61A9DC20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P02_mensaje_director_pag_01.swift; sourceTree = "<group>"; };
-		FA61A9DE20AC82CD00FB5F80 /* P03_gestion_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_01.swift; sourceTree = "<group>"; };
-		FA78786620AA3F9600E83BBB /* P00_Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P00_Cover.swift; sourceTree = "<group>"; };
-		FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueAnimation.swift; sourceTree = "<group>"; };
+		CB1C440120B4DECE00A4300D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNavigationViewController.swift; sourceTree = "<group>"; };
+		CB1C440520B4FBBA00A4300D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FADC59DC209CD42400D55C50 /* Penoles DS-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penoles DS-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC59DF209CD42400D55C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADC59E4209CD42400D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADC59E6209CD42600D55C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADC59E9209CD42600D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC59EB209CD42600D55C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFB84EE20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_02.swift; sourceTree = "<group>"; };
-		FAFB84F020AC880500EAC6C4 /* P03_gestion_pag_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_03.swift; sourceTree = "<group>"; };
-		FAFB84F220AC882600EAC6C4 /* P03_gestion_pag_04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_04.swift; sourceTree = "<group>"; };
-		FAFB84F420AC886700EAC6C4 /* P03_gestion_pag_05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_05.swift; sourceTree = "<group>"; };
-		FAFB84F620AC888C00EAC6C4 /* P03_gestion_pag_06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_06.swift; sourceTree = "<group>"; };
-		FAFB84F820AC88B000EAC6C4 /* P03_gestion_pag_07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P03_gestion_pag_07.swift; sourceTree = "<group>"; };
-		FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04_grupos_pag_01.swift; sourceTree = "<group>"; };
-		FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P04_grupos_pag_02.swift; sourceTree = "<group>"; };
-		FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P05_transparencia_pag_01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,32 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA61A9CF20AC7C6200FB5F80 /* 03 Gestion */ = {
-			isa = PBXGroup;
-			children = (
-				FA61A9DE20AC82CD00FB5F80 /* P03_gestion_pag_01.swift */,
-				FAFB84EE20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift */,
-				FAFB84F020AC880500EAC6C4 /* P03_gestion_pag_03.swift */,
-				FAFB84F220AC882600EAC6C4 /* P03_gestion_pag_04.swift */,
-				FAFB84F420AC886700EAC6C4 /* P03_gestion_pag_05.swift */,
-				FAFB84F620AC888C00EAC6C4 /* P03_gestion_pag_06.swift */,
-				FAFB84F820AC88B000EAC6C4 /* P03_gestion_pag_07.swift */,
-			);
-			path = "03 Gestion";
-			sourceTree = "<group>";
-		};
-		FAD4886620A0BA7C0020E4E7 /* 02 Mensaje del Director */ = {
-			isa = PBXGroup;
-			children = (
-				FA61A9DC20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift */,
-			);
-			path = "02 Mensaje del Director";
-			sourceTree = "<group>";
-		};
 		FAD4886B20A0C7CF0020E4E7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FAD4886920A0C7AC0020E4E7 /* segueAnimation.swift */,
+				FADC59DF209CD42400D55C50 /* AppDelegate.swift */,
+				CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */,
+				CB1C440120B4DECE00A4300D /* PageViewController.swift */,
+				CB1C440520B4FBBA00A4300D /* MapViewController.swift */,
 			);
 			name = Classes;
 			path = "New Group";
@@ -117,7 +70,6 @@
 		FADC59DE209CD42400D55C50 /* Penoles DS-2017 */ = {
 			isa = PBXGroup;
 			children = (
-				FADC59DF209CD42400D55C50 /* AppDelegate.swift */,
 				FAD4886B20A0C7CF0020E4E7 /* Classes */,
 				FADC5A28209D1E2D00D55C50 /* Resources */,
 				FADC59E3209CD42400D55C50 /* Main.storyboard */,
@@ -131,50 +83,8 @@
 		FADC5A28209D1E2D00D55C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FADC5A2E209D201000D55C50 /* 00 cover */,
-				FADC5A2F209D202B00D55C50 /* 01 PerfilPenoles */,
-				FAD4886620A0BA7C0020E4E7 /* 02 Mensaje del Director */,
-				FA61A9CF20AC7C6200FB5F80 /* 03 Gestion */,
-				FAFB84FA20AC8E0C00EAC6C4 /* 04 Grupos */,
-				FAFB84FF20AC8EE300EAC6C4 /* 05 Transparencia */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		FADC5A2E209D201000D55C50 /* 00 cover */ = {
-			isa = PBXGroup;
-			children = (
-				FA78786620AA3F9600E83BBB /* P00_Cover.swift */,
-			);
-			path = "00 cover";
-			sourceTree = "<group>";
-		};
-		FADC5A2F209D202B00D55C50 /* 01 PerfilPenoles */ = {
-			isa = PBXGroup;
-			children = (
-				FA61A9D420AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift */,
-				FA61A9D620AC7F7100FB5F80 /* P01_perfiles_pag_02.swift */,
-				FA61A9D820AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift */,
-				FA61A9DA20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift */,
-			);
-			path = "01 PerfilPenoles";
-			sourceTree = "<group>";
-		};
-		FAFB84FA20AC8E0C00EAC6C4 /* 04 Grupos */ = {
-			isa = PBXGroup;
-			children = (
-				FAFB84FB20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift */,
-				FAFB84FD20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift */,
-			);
-			path = "04 Grupos";
-			sourceTree = "<group>";
-		};
-		FAFB84FF20AC8EE300EAC6C4 /* 05 Transparencia */ = {
-			isa = PBXGroup;
-			children = (
-				FAFB850020AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift */,
-			);
-			path = "05 Transparencia";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,23 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */,
-				FA61A9D920AC7FBC00FB5F80 /* P01_perfiles_pag_03.swift in Sources */,
-				FAFB84FE20AC8ED700EAC6C4 /* P04_grupos_pag_02.swift in Sources */,
-				FA61A9D520AC7E7D00FB5F80 /* P01_perfiles_pag_01.swift in Sources */,
-				FAFB84F520AC886700EAC6C4 /* P03_gestion_pag_05.swift in Sources */,
-				FAFB84EF20AC87BA00EAC6C4 /* P03_gestion_pag_02.swift in Sources */,
-				FAFB84F320AC882600EAC6C4 /* P03_gestion_pag_04.swift in Sources */,
-				FA78786720AA3F9600E83BBB /* P00_Cover.swift in Sources */,
-				FA61A9DD20AC81CA00FB5F80 /* P02_mensaje_director_pag_01.swift in Sources */,
-				FAD4886A20A0C7AC0020E4E7 /* segueAnimation.swift in Sources */,
-				FAFB84F120AC880500EAC6C4 /* P03_gestion_pag_03.swift in Sources */,
-				FA61A9DB20AC7FE800FB5F80 /* P01_perfiles_pag_04.swift in Sources */,
-				FAFB84F920AC88B000EAC6C4 /* P03_gestion_pag_07.swift in Sources */,
-				FAFB84FC20AC8EB200EAC6C4 /* P04_grupos_pag_01.swift in Sources */,
-				FA61A9DF20AC82CD00FB5F80 /* P03_gestion_pag_01.swift in Sources */,
-				FAFB850120AC90BA00EAC6C4 /* P05_transparencia_pag_01.swift in Sources */,
-				FAFB84F720AC888C00EAC6C4 /* P03_gestion_pag_06.swift in Sources */,
-				FA61A9D720AC7F7100FB5F80 /* P01_perfiles_pag_02.swift in Sources */,
+				CB1C440420B4E15300A4300D /* PageNavigationViewController.swift in Sources */,
+				CB1C440220B4DECE00A4300D /* PageViewController.swift in Sources */,
+				CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
