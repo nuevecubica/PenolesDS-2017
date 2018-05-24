@@ -204,20 +204,21 @@ class PageNavigationViewController: UIViewController {
       view.removeFromSuperview()
     }
 
-    for (index,section) in sections.enumerated() {
-      let button = UIButton(type: .custom)
-      button.setTitle(section.name, for: .normal)
-      button.setTitleColor(.white, for: .normal)
-      button.tag = index
-      button.addTarget(self, action: #selector(sectionTapped(_:)), for: .touchUpInside)
-
-      button.translatesAutoresizingMaskIntoConstraints = false
-      menuStackView.addArrangedSubview(button)
-
-      NSLayoutConstraint.activate([
-        button.heightAnchor.constraint(equalToConstant: 40.0)
-      ])
-    }
+	for (index,section) in sections.enumerated() {
+		let button = UIButton(type: .custom)
+		button.setTitle(section.name, for: .normal)
+		button.setTitleColor(.white, for: .normal)
+		button.tag = index
+		button.addTarget(self, action: #selector(sectionTapped(_:)), for: .touchUpInside)
+		button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left;
+		button.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+		button.translatesAutoresizingMaskIntoConstraints = false
+		menuStackView.addArrangedSubview(button)
+		
+		NSLayoutConstraint.activate([
+			button.heightAnchor.constraint(equalToConstant: 40.0)
+			])
+	}
   }
 
   @IBAction func sectionTapped(_ sender: UIButton) {
