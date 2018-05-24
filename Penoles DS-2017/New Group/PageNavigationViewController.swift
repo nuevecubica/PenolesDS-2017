@@ -32,8 +32,8 @@ class PageNavigationViewController: UIViewController {
   var menuConstraint: NSLayoutConstraint!
 
   var sections:[Section] = [
-    Section(name: "Cover", pages: [
-      ImagePage(imageName: "mainCoverOk"),
+    Section(name: "Portada", pages: [
+      ImagePage(imageName: "portada"),
     ]),
 
     Section(name: "Perfil de Peñoles", pages: [
@@ -43,11 +43,11 @@ class PageNavigationViewController: UIViewController {
       ImagePage(imageName: "perfil_pag4"),
     ]),
 
-    Section(name: "Mensaje del director general", pages: [
+    Section(name: "Mensaje del Director General", pages: [
       ImagePage(imageName: "mensaje_director"),
     ]),
 
-    Section(name: "Gestión", pages: [
+    Section(name: "Gestión de la sustentabilidad", pages: [
       ImagePage(imageName: "gestion_pag1"),
       ImagePage(imageName: "gestion_pag2"),
       ImagePage(imageName: "gestion_pag3"),
@@ -57,14 +57,110 @@ class PageNavigationViewController: UIViewController {
       ImagePage(imageName: "gestion_pag7"),
     ]),
 
-    Section(name: "Grupos", pages: [
+    Section(name: "Grupos de interés", pages: [
       ImagePage(imageName: "grupos_pag1"),
       ImagePage(imageName: "grupos_pag2"),
     ]),
-
-    Section(name: "Transparencia", pages: [
-      ImagePage(imageName: "transparencia_pag1"),
-    ]),
+	
+	Section(name: "Transparencia y cumplimiento", pages: [
+		ImagePage(imageName: "transparencia_pag1"),
+		ImagePage(imageName: "transparencia_pag2"),
+		ImagePage(imageName: "transparencia_pag3"),
+		ImagePage(imageName: "transparencia_pag4"),
+		ImagePage(imageName: "transparencia_pag5"),
+		ImagePage(imageName: "transparencia_pag6"),
+		ImagePage(imageName: "transparencia_pag7"),
+		ImagePage(imageName: "transparencia_pag8"),
+		ImagePage(imageName: "transparencia_pag9"),
+		ImagePage(imageName: "transparencia_pag10"),
+		]),
+	
+	Section(name: "Desempeño económico", pages: [
+		ImagePage(imageName: "des_economico_pag1"),
+		ImagePage(imageName: "des_economico_pag2"),
+		ImagePage(imageName: "des_economico_pag3"),
+		ImagePage(imageName: "des_economico_pag4"),
+		ImagePage(imageName: "des_economico_pag5"),
+		ImagePage(imageName: "des_economico_pag6"),
+		ImagePage(imageName: "des_economico_pag7"),
+		ImagePage(imageName: "des_economico_pag8"),
+		ImagePage(imageName: "des_economico_pag9"),
+		ImagePage(imageName: "des_economico_pag10"),
+		ImagePage(imageName: "des_economico_pag11"),
+		ImagePage(imageName: "des_economico_pag12"),
+		ImagePage(imageName: "des_economico_pag13"),
+		]),
+	
+	Section(name: "Desempeño ambiental", pages: [
+		ImagePage(imageName: "des_ambiental_pag1"),
+		ImagePage(imageName: "des_ambiental_pag2"),
+		ImagePage(imageName: "des_ambiental_pag3"),
+		ImagePage(imageName: "des_ambiental_pag4"),
+		ImagePage(imageName: "des_ambiental_pag5"),
+		ImagePage(imageName: "des_ambiental_pag6"),
+		ImagePage(imageName: "des_ambiental_pag7"),
+		ImagePage(imageName: "des_ambiental_pag8"),
+		ImagePage(imageName: "des_ambiental_pag9"),
+		ImagePage(imageName: "des_ambiental_pag10"),
+		]),
+	
+	Section(name: "Desempeño social", pages: [
+		ImagePage(imageName: "des_social_pag1"),
+		ImagePage(imageName: "des_social_pag2"),
+		ImagePage(imageName: "des_social_pag3"),
+		ImagePage(imageName: "des_social_pag4"),
+		ImagePage(imageName: "des_social_pag5"),
+		ImagePage(imageName: "des_social_pag6"),
+		ImagePage(imageName: "des_social_pag7"),
+		ImagePage(imageName: "des_social_pag8"),
+		ImagePage(imageName: "des_social_pag9"),
+		ImagePage(imageName: "des_social_pag10"),
+		ImagePage(imageName: "des_social_pag11"),
+		ImagePage(imageName: "des_social_pag12"),
+		ImagePage(imageName: "des_social_pag13"),
+		ImagePage(imageName: "des_social_pag14"),
+		ImagePage(imageName: "des_social_pag15"),
+		ImagePage(imageName: "des_social_pag16"),
+		ImagePage(imageName: "des_social_pag17"),
+		ImagePage(imageName: "des_social_pag18"),
+		ImagePage(imageName: "des_social_pag19"),
+		ImagePage(imageName: "des_social_pag20"),
+		ImagePage(imageName: "des_social_pag21"),
+		ImagePage(imageName: "des_social_pag22"),
+		ImagePage(imageName: "des_social_pag23"),
+		ImagePage(imageName: "des_social_pag24"),
+		ImagePage(imageName: "des_social_pag25"),
+		ImagePage(imageName: "des_social_pag26"),
+		ImagePage(imageName: "des_social_pag27"),
+		ImagePage(imageName: "des_social_pag28"),
+		ImagePage(imageName: "des_social_pag29"),
+		ImagePage(imageName: "des_social_pag30"),
+		]),
+	
+	Section(name: "Premios y distinciones", pages: [
+		ImagePage(imageName: "premios_pag1"),
+		]),
+	
+	Section(name: "Asociaciones", pages: [
+		ImagePage(imageName: "asociaciones_pag1"),
+		]),
+	
+	Section(name: "Cuarto Estado Financiero", pages: [
+		ImagePage(imageName: "estado_financiero_pag1"),
+		]),
+	
+	Section(name: "Acerca de este informe", pages: [
+		ImagePage(imageName: "acerca_informe_pag1"),
+		ImagePage(imageName: "acerca_informe_pag2"),
+		ImagePage(imageName: "acerca_informe_pag3"),
+		ImagePage(imageName: "acerca_informe_pag4"),
+		ImagePage(imageName: "acerca_informe_pag5"),
+		]),
+	
+	Section(name: "Datos de contacto", pages: [
+		ImagePage(imageName: "contacto_pag1"),
+		]),
+	
   ]
 
   var currentSection: Int = 0
@@ -111,7 +207,7 @@ class PageNavigationViewController: UIViewController {
     for (index,section) in sections.enumerated() {
       let button = UIButton(type: .custom)
       button.setTitle(section.name, for: .normal)
-      button.setTitleColor(.black, for: .normal)
+      button.setTitleColor(.white, for: .normal)
       button.tag = index
       button.addTarget(self, action: #selector(sectionTapped(_:)), for: .touchUpInside)
 
