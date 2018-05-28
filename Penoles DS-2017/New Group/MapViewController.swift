@@ -18,9 +18,8 @@ class MapPage: Page {
 }
 
 class MapViewController: UIViewController {
-    var thisMap = ""
-    
-    
+    @IBOutlet weak var backgroundImage: UIImageView!
+
     @IBOutlet weak var btn_exploration: UIButton!
     @IBOutlet weak var btn_minas: UIButton!
     @IBOutlet weak var btn_metales: UIButton!
@@ -42,22 +41,15 @@ class MapViewController: UIViewController {
     @IBOutlet weak var btn_tamaulipas: UIButton!
     
     @IBAction func btn_exploration(_ sender: UIButton) {
-        print("btn exploracion touch up")
-        thisMap = "mapa_exploracion_minas"
-        assignbackground()
+      changeImage("mapa_exploracion_minas")
     }
     
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
- 
-        // RUN BACKGROUND
-        thisMap = "mapa0"
-        assignbackground()
-        
-        
-        
+
+        changeImage("mapa0")
+
         btn_exploration.contentHorizontalAlignment = .left
         btn_minas.contentHorizontalAlignment = .left
         btn_metales.contentHorizontalAlignment = .left
@@ -80,15 +72,7 @@ class MapViewController: UIViewController {
     }
     
     // ASSING A BACKGROUND IMAGE TO THE VIEW
-    func assignbackground(){
-        let background = UIImage(named: thisMap )
-        var imageView : UIImageView!
-        imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIViewContentMode.scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        view.addSubview(imageView)
-        self.view.sendSubview(toBack: imageView)
+    func changeImage(_ name: String) {
+      backgroundImage.image = UIImage(named: name)
     }
 }

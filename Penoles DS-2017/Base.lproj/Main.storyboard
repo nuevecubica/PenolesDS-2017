@@ -127,8 +127,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SSw-9Y-pfj">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="topRight" translatesAutoresizingMaskIntoConstraints="NO" id="clC-fv-GEP">
-                                <rect key="frame" x="0.0" y="459" width="343" height="309"/>
+                                <rect key="frame" x="0.0" y="459" width="282" height="309"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa0Scroll" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-1C-3LM">
                                         <rect key="frame" x="0.0" y="0.0" width="282" height="1445"/>
@@ -139,9 +142,10 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="4Hl-1C-3LM" secondAttribute="bottom" constant="-1136" id="16a-Df-bmb"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Hl-1C-3LM" secondAttribute="bottom" id="16a-Df-bmb"/>
+                                    <constraint firstAttribute="width" constant="282" id="21u-sE-mZy"/>
                                     <constraint firstItem="4Hl-1C-3LM" firstAttribute="top" secondItem="clC-fv-GEP" secondAttribute="top" id="H05-bm-QvB"/>
-                                    <constraint firstAttribute="trailing" secondItem="4Hl-1C-3LM" secondAttribute="trailing" constant="61" id="gYj-oO-LAn"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Hl-1C-3LM" secondAttribute="trailing" id="gYj-oO-LAn"/>
                                     <constraint firstItem="4Hl-1C-3LM" firstAttribute="leading" secondItem="clC-fv-GEP" secondAttribute="leading" id="nQB-7D-xSr"/>
                                 </constraints>
                             </scrollView>
@@ -310,14 +314,18 @@
                             <constraint firstItem="7KF-FZ-a4y" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="top" constant="63" id="6fP-rc-vUu"/>
                             <constraint firstItem="clC-fv-GEP" firstAttribute="leading" secondItem="4gc-mf-02a" secondAttribute="leading" id="BYT-oU-lxP"/>
                             <constraint firstItem="clC-fv-GEP" firstAttribute="bottom" secondItem="4gc-mf-02a" secondAttribute="bottom" id="EC9-G9-PzF"/>
-                            <constraint firstItem="4gc-mf-02a" firstAttribute="trailing" secondItem="clC-fv-GEP" secondAttribute="trailing" constant="681" id="LFk-tV-wHv"/>
                             <constraint firstItem="eeM-Qa-pw5" firstAttribute="leading" secondItem="7KF-FZ-a4y" secondAttribute="trailing" constant="20" id="MPK-Rl-s20"/>
                             <constraint firstItem="eeM-Qa-pw5" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="top" constant="63" id="RgG-fY-AdH"/>
-                            <constraint firstItem="clC-fv-GEP" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="top" constant="439" id="Uvu-rF-ey1"/>
+                            <constraint firstItem="SSw-9Y-pfj" firstAttribute="leading" secondItem="56c-kg-X5z" secondAttribute="leading" id="So8-PK-Jqc"/>
+                            <constraint firstItem="SSw-9Y-pfj" firstAttribute="top" secondItem="56c-kg-X5z" secondAttribute="top" id="Xfh-3H-Ifo"/>
+                            <constraint firstAttribute="trailing" secondItem="SSw-9Y-pfj" secondAttribute="trailing" id="YQN-oU-V07"/>
+                            <constraint firstItem="clC-fv-GEP" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="bottom" constant="-309" id="oA1-ib-uda"/>
+                            <constraint firstAttribute="bottom" secondItem="SSw-9Y-pfj" secondAttribute="bottom" id="xXl-ki-X0C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4gc-mf-02a"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="SSw-9Y-pfj" id="Ye1-AA-G5R"/>
                         <outlet property="btn_chihuahua" destination="9gv-ji-MPd" id="zeM-9p-EEB"/>
                         <outlet property="btn_ciudad_mexico" destination="8I5-l1-Ut8" id="n1W-4a-OND"/>
                         <outlet property="btn_coahuila" destination="EP0-hW-22a" id="xG5-A0-M6L"/>
