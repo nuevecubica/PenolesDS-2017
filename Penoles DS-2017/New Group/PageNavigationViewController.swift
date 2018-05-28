@@ -24,7 +24,6 @@ class Section {
 
 class PageNavigationViewController: UIViewController {
   @IBOutlet weak var containerView: UIView!
-
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var menuContainer: UIView!
   @IBOutlet weak var menuStackView: UIStackView!
