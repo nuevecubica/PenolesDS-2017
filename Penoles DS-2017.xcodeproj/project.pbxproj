@@ -10,6 +10,7 @@
 		CB1C440220B4DECE00A4300D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440120B4DECE00A4300D /* PageViewController.swift */; };
 		CB1C440420B4E15300A4300D /* PageNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */; };
 		CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440520B4FBBA00A4300D /* MapViewController.swift */; };
+		FA91D4E220C21CD4002FD433 /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91D4E120C21CD4002FD433 /* CoverViewController.swift */; };
 		FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59DF209CD42400D55C50 /* AppDelegate.swift */; };
 		FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E3209CD42400D55C50 /* Main.storyboard */; };
 		FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E6209CD42600D55C50 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		CB1C440120B4DECE00A4300D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNavigationViewController.swift; sourceTree = "<group>"; };
 		CB1C440520B4FBBA00A4300D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA91D4E120C21CD4002FD433 /* CoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverViewController.swift; sourceTree = "<group>"; };
 		FADC59DC209CD42400D55C50 /* Penoles DS-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penoles DS-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC59DF209CD42400D55C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADC59E4209CD42400D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 				CB1C440320B4E15300A4300D /* PageNavigationViewController.swift */,
 				CB1C440120B4DECE00A4300D /* PageViewController.swift */,
 				CB1C440520B4FBBA00A4300D /* MapViewController.swift */,
+				FA91D4E120C21CD4002FD433 /* CoverViewController.swift */,
 			);
 			name = Classes;
 			path = "New Group";
@@ -160,6 +163,7 @@
 			files = (
 				FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */,
 				CB1C440420B4E15300A4300D /* PageNavigationViewController.swift in Sources */,
+				FA91D4E220C21CD4002FD433 /* CoverViewController.swift in Sources */,
 				CB1C440220B4DECE00A4300D /* PageViewController.swift in Sources */,
 				CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */,
 			);

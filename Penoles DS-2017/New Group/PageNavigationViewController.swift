@@ -29,13 +29,14 @@ class PageNavigationViewController: UIViewController {
   @IBOutlet weak var menuStackView: UIStackView!
 
   var menuConstraint: NSLayoutConstraint!
-
+    
   var sections:[Section] = [
     Section(name: "Portada", pages: [
       ImagePage(imageName: "portada"),
     ]),
 
     Section(name: "Perfil de Peñoles", pages: [
+        CoverPage(),
       ImagePage(imageName: "perfil_pag1"),
       MapPage(),
       ImagePage(imageName: "perfil_pag3"),
@@ -47,6 +48,7 @@ class PageNavigationViewController: UIViewController {
     ]),
 
     Section(name: "Gestión de la sustentabilidad", pages: [
+      
       ImagePage(imageName: "gestion_pag1"),
       ImagePage(imageName: "gestion_pag2"),
       ImagePage(imageName: "gestion_pag3"),
@@ -87,7 +89,6 @@ class PageNavigationViewController: UIViewController {
 		ImagePage(imageName: "des_economico_pag10"),
 		ImagePage(imageName: "des_economico_pag11"),
 		ImagePage(imageName: "des_economico_pag12"),
-		ImagePage(imageName: "des_economico_pag13"),
 		]),
 	
 	Section(name: "Desempeño ambiental", pages: [
@@ -159,6 +160,9 @@ class PageNavigationViewController: UIViewController {
 	Section(name: "Datos de contacto", pages: [
 		ImagePage(imageName: "contacto_pag1"),
 		]),
+    Section(name: "Contra portada", pages: [
+        ImagePage(imageName: "contra_pag1"),
+        ]),
 	
   ]
 
