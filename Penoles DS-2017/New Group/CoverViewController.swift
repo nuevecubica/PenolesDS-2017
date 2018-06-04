@@ -9,13 +9,33 @@
 import UIKit
 
 class CoverPage: Page {
+    var theBg: String = ""
+    var theFront: String = ""
+    var theTitle: String = ""
+    
+    
+    init(theBg:String, theFront:String, theTitle:String){
+        self.theBg = theBg
+        self.theFront = theFront
+        self.theTitle = theTitle
+        print(theBg, theFront, theBg)
+    }
+    
     var viewController: UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "coverViewController")
     }
 }
 
 class CoverViewController: UIViewController {
+    var oBg: String! = nil
+    var oFront: String! = nil
+    var oTitle: String! = nil
+    
     var image: UIImage! = nil
+    
+    
+    
+    
     
     @IBOutlet weak var backgroundImageCover: UIImageView!
     @IBOutlet weak var textImageCover: UIImageView!
@@ -26,7 +46,13 @@ class CoverViewController: UIViewController {
         textImageCover.alpha = 0
         frontImageCover.alpha = 0
         
-         changeImageBGCover("cover_test_bg","cover_test_text","cover_test_front")
+        oBg = "desemp_ambiental_bg"
+        oFront =  "desemp_ambiental_title"
+        oTitle = "desemp_ambiental_front"
+        
+        
+        changeImageBGCover(oBg,oFront,oTitle)
+        
     }
     
     // ASSING A BACKGROUND IMAGE TO THE VIEW
@@ -36,19 +62,22 @@ class CoverViewController: UIViewController {
         frontImageCover.image = UIImage(named: front)
     }
     override func viewDidAppear(_ animated: Bool) {
+        
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {
-            self.frontImageCover.alpha = 1
-        }) { (true) in
-            self.showTitle()
-        }
-    }
-    
-    func showTitle(){
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 2.0, delay:1.0, options: .curveEaseOut, animations: {
+            // var textoImage = self.textImageCover.frame
+            //textoImage.origin.x += textoImage.size.width / 2
+            //self.textImageCover.frame = textoImage
+            
             self.textImageCover.alpha = 1
         })
+        UIView.animate(withDuration: 3.0, animations: {
+            self.frontImageCover.alpha = 1
+            
+        })
     }
+    
+    
 }
 
 

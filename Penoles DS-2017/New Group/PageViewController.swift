@@ -9,16 +9,16 @@
 import UIKit
 
 class ImagePage: Page {
-  let imageName: String
-
+    let imageName: String
   var viewController: UIViewController {
     return PageViewController(image: UIImage(named: imageName)!)
   }
-
   init(imageName: String) {
     self.imageName = imageName
-  }
+    }
 }
+
+
 
 class PageViewController: UIViewController {
   var image: UIImage! = nil
@@ -31,6 +31,7 @@ class PageViewController: UIViewController {
     self.image = image
   }
 
+    
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -46,7 +47,7 @@ class PageViewController: UIViewController {
 
     scrollView.translatesAutoresizingMaskIntoConstraints = false
     imageView.translatesAutoresizingMaskIntoConstraints = false
-
+    
     NSLayoutConstraint.activate([
       scrollView.topAnchor.constraint(equalTo: view.topAnchor),
       scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
