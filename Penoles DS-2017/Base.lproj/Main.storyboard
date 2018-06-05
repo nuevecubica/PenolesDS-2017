@@ -405,6 +405,9 @@
                                     <constraint firstAttribute="width" constant="160" id="kLq-EH-D7J"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="nIJ-Is-qu1">
+                                <rect key="frame" x="290" y="692" width="26" height="26"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -414,6 +417,7 @@
                             <constraint firstItem="z4B-rL-hv4" firstAttribute="bottom" secondItem="4gc-mf-02a" secondAttribute="bottom" id="CXc-if-fvI"/>
                             <constraint firstItem="z4B-rL-hv4" firstAttribute="trailing" secondItem="4gc-mf-02a" secondAttribute="trailing" id="Cpa-wy-lYz"/>
                             <constraint firstItem="clC-fv-GEP" firstAttribute="bottom" secondItem="4gc-mf-02a" secondAttribute="bottom" constant="-50" id="EC9-G9-PzF"/>
+                            <constraint firstItem="nIJ-Is-qu1" firstAttribute="leading" secondItem="clC-fv-GEP" secondAttribute="trailing" constant="8" id="J3P-lt-nmd"/>
                             <constraint firstItem="eeM-Qa-pw5" firstAttribute="leading" secondItem="7KF-FZ-a4y" secondAttribute="trailing" constant="20" id="MPK-Rl-s20"/>
                             <constraint firstItem="z4B-rL-hv4" firstAttribute="leading" secondItem="4gc-mf-02a" secondAttribute="leading" id="Osc-Rx-F5z"/>
                             <constraint firstItem="eeM-Qa-pw5" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="top" constant="63" id="RgG-fY-AdH"/>
@@ -423,6 +427,7 @@
                             <constraint firstItem="z4B-rL-hv4" firstAttribute="top" secondItem="56c-kg-X5z" secondAttribute="top" id="Zll-k7-2aS"/>
                             <constraint firstItem="clC-fv-GEP" firstAttribute="top" secondItem="4gc-mf-02a" secondAttribute="bottom" constant="-435" id="oA1-ib-uda"/>
                             <constraint firstAttribute="bottom" secondItem="SSw-9Y-pfj" secondAttribute="bottom" id="xXl-ki-X0C"/>
+                            <constraint firstItem="4gc-mf-02a" firstAttribute="bottom" secondItem="nIJ-Is-qu1" secondAttribute="bottom" constant="50" id="ybw-CQ-QvW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4gc-mf-02a"/>
                     </view>
@@ -447,6 +452,7 @@
                         <outlet property="btn_subsidiarias" destination="foH-5T-jZw" id="32f-tO-quH"/>
                         <outlet property="btn_tamaulipas" destination="G9T-z9-lTQ" id="1na-ca-fSf"/>
                         <outlet property="btn_zacatecas" destination="Aqo-Ox-EFy" id="Sh1-Kn-VMH"/>
+                        <outlet property="downIcon" destination="nIJ-Is-qu1" id="3jW-VX-g3L"/>
                         <outlet property="mapaScrollView" destination="clC-fv-GEP" id="2zS-41-f3V"/>
                         <outlet property="scrollerImage" destination="4Hl-1C-3LM" id="jKr-4R-xuK"/>
                         <outlet property="scrollerView" destination="clC-fv-GEP" id="G0f-XH-PnN"/>

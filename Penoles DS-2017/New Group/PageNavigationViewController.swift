@@ -54,7 +54,7 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         Section(name: "Gestión de la sustentabilidad", pages: [
-            CoverPage(theBg: "gestion_bg", theFront: "gestion_front",theTitle:"gestion_text"),
+            CoverPage(theBg: "gestion_bg", theFront: "gestion_front",theTitle:"gestion_title"),
             //ImagePage(imageName: "gestion_pag1"),
             ImagePage(imageName: "gestion_pag2"),
             ImagePage(imageName: "gestion_pag3"),
@@ -65,13 +65,13 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         Section(name: "Grupos de interés", pages: [
-            CoverPage(theBg: "interes_bg", theFront: "interes_front",theTitle:"interes_text"),
+            CoverPage(theBg: "grupos_bg", theFront: "grupos_front",theTitle:"grupos_title"),
             //ImagePage(imageName: "grupos_pag1"),
             ImagePage(imageName: "grupos_pag2"),
             ]),
         
         Section(name: "Transparencia y cumplimiento", pages: [
-            CoverPage(theBg: "cover_bg", theFront: "cover_front",theTitle:"cover_text"),
+            CoverPage(theBg: "transparencia_bg", theFront: "transparencia_front",theTitle:"transparencia_title"),
             //ImagePage(imageName: "transparencia_pag1"),
             ImagePage(imageName: "transparencia_pag2"),
             ImagePage(imageName: "transparencia_pag3"),
@@ -85,7 +85,7 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         Section(name: "Desempeño económico", pages: [
-            CoverPage(theBg: "desemp_economico_bg", theFront: "desemp_economico_front",theTitle:"desemp_economico_text"),
+            CoverPage(theBg: "desemp_economico_bg", theFront: "desemp_economico_front",theTitle:"desemp_economico_title"),
             //ImagePage(imageName: "des_economico_pag1"),
             ImagePage(imageName: "des_economico_pag2"),
             ImagePage(imageName: "des_economico_pag3"),
@@ -101,7 +101,7 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         Section(name: "Desempeño ambiental", pages: [
-            CoverPage(theBg: "desemp_ambiental_bg", theFront: "desemp_ambiental_front",theTitle:"desemp_ambiental_text"),
+            CoverPage(theBg: "desemp_ambiental_bg", theFront: "desemp_ambiental_front",theTitle:"desemp_ambiental_title"),
             //ImagePage(imageName: "des_ambiental_pag1"),
             ImagePage(imageName: "des_ambiental_pag2"),
             ImagePage(imageName: "des_ambiental_pag3"),
@@ -115,7 +115,7 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         Section(name: "Desempeño social", pages: [
-            CoverPage(theBg: "desemp_social_bg", theFront: "desemp_social_front",theTitle:"desemp_social_text"),
+            CoverPage(theBg: "desemp_social_bg", theFront: "desemp_social_front",theTitle:"desemp_social_title"),
             //ImagePage(imageName: "des_social_pag1"),
             ImagePage(imageName: "des_social_pag2"),
             ImagePage(imageName: "des_social_pag3"),

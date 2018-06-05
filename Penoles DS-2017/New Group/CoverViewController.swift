@@ -47,11 +47,13 @@ class CoverViewController: UIViewController {
         textImageCover.alpha = 0
         frontImageCover.alpha = 0
         
+        /*
         oBg = "desemp_ambiental_bg"
         oFront =  "desemp_ambiental_title"
         oTitle = "desemp_ambiental_front"
-        
-        changeImageBGCover(oBg,oFront,oTitle)
+        */
+        changeImageBGCover(oBg,oTitle,oFront)
+        print(oBg, oFront, oTitle)
     }
     
     // ASSING A BACKGROUND IMAGE TO THE VIEW
