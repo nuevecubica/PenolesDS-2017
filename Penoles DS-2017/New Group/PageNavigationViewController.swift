@@ -12,6 +12,10 @@ protocol Page {
     var viewController: UIViewController { get }
 }
 
+protocol ScrollablePageViewController {
+  var showsScrollIndicator: Bool { get }
+}
+
 class Section {
     var name: String
     var pages: [Page] = []
@@ -27,6 +31,8 @@ class PageNavigationViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var menuContainer: UIView!
     @IBOutlet weak var menuStackView: UIStackView!
+
+    @IBOutlet weak var scrollInidcator: UIImageView!
     
     var menuConstraint: NSLayoutConstraint!
     
@@ -317,6 +323,13 @@ class PageNavigationViewController: UIViewController {
             self.currentPage = pageNumber
             self.currentSection = section
         }
+
+      if let scrollableVV = newViewController as? ScrollablePageViewController {
+        scrollInidcator.isHidden = !scrollableVV.showsScrollIndicator
+      } else {
+        scrollInidcator.isHidden = true
+      }
+
     }
     
 }

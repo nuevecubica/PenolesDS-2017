@@ -12,8 +12,7 @@ class CoverPage: Page {
     var theBg: String = ""
     var theFront: String = ""
     var theTitle: String = ""
-    
-    
+
     init(theBg:String, theFront:String, theTitle:String){
         self.theBg = theBg
         self.theFront = theFront
@@ -22,7 +21,13 @@ class CoverPage: Page {
     }
     
     var viewController: UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "coverViewController")
+      let coverViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "coverViewController") as! CoverViewController
+
+      coverViewController.oBg = theBg
+      coverViewController.oFront = theFront
+      coverViewController.oTitle = theTitle
+
+      return coverViewController
     }
 }
 
@@ -32,11 +37,7 @@ class CoverViewController: UIViewController {
     var oTitle: String! = nil
     
     var image: UIImage! = nil
-    
-    
-    
-    
-    
+
     @IBOutlet weak var backgroundImageCover: UIImageView!
     @IBOutlet weak var textImageCover: UIImageView!
     @IBOutlet weak var frontImageCover: UIImageView!
@@ -50,9 +51,7 @@ class CoverViewController: UIViewController {
         oFront =  "desemp_ambiental_title"
         oTitle = "desemp_ambiental_front"
         
-        
         changeImageBGCover(oBg,oFront,oTitle)
-        
     }
     
     // ASSING A BACKGROUND IMAGE TO THE VIEW

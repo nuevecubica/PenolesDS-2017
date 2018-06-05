@@ -63,3 +63,9 @@ class PageViewController: UIViewController {
       ])
   }
 }
+
+extension PageViewController: ScrollablePageViewController {
+  var showsScrollIndicator: Bool {
+    return scrollView.contentSize.height > scrollView.bounds.height
+  }
+}

@@ -118,6 +118,7 @@
                         <outlet property="containerView" destination="6t4-fB-3Bs" id="zkH-HC-6Td"/>
                         <outlet property="menuContainer" destination="ISJ-yn-P0M" id="tA6-wv-4Bc"/>
                         <outlet property="menuStackView" destination="0Pt-LR-tfQ" id="7mh-r9-fNI"/>
+                        <outlet property="scrollInidcator" destination="4cX-GK-rEU" id="2Nx-K5-Ba4"/>
                         <outlet property="titleLabel" destination="HCU-16-CMn" id="3w7-tV-Mh4"/>
                     </connections>
                 </viewController>
@@ -142,11 +143,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="topRight" translatesAutoresizingMaskIntoConstraints="NO" id="clC-fv-GEP" userLabel="mapaScrollView">
                                 <rect key="frame" x="0.0" y="333" width="282" height="385"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="all_unidades_scroll" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-1C-3LM" userLabel="scrollImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="all_unidades_scroll" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-1C-3LM" userLabel="scrollImage">
                                         <rect key="frame" x="0.0" y="0.0" width="282" height="1445"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="282" id="2jA-Xc-0xe"/>
-                                            <constraint firstAttribute="height" constant="1445" id="F4O-ro-vEN"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
