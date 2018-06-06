@@ -17,7 +17,6 @@ class CoverPage: Page {
         self.theBg = theBg
         self.theFront = theFront
         self.theTitle = theTitle
-        print(theBg, theFront, theBg)
     }
     
     var viewController: UIViewController {
@@ -53,7 +52,6 @@ class CoverViewController: UIViewController {
         oTitle = "desemp_ambiental_front"
         */
         changeImageBGCover(oBg,oTitle,oFront)
-        print(oBg, oFront, oTitle)
     }
     
     // ASSING A BACKGROUND IMAGE TO THE VIEW

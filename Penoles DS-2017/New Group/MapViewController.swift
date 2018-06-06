@@ -159,7 +159,9 @@ class MapViewController: UIViewController {
         changeImageScroller("all_unidades_scroll")
         scrollerView.alpha = 1
         changeiconStatus()
-                        scrollerView.scrollToTop()
+        scrollerView.scrollToTop(1773)
+        //1445.5
+        //dif: 328
     }
     
     @IBAction func all_estados(_ sender: UIButton) {
@@ -167,7 +169,8 @@ class MapViewController: UIViewController {
         changeImageScroller("all_estados_scroll")
         scrollerView.alpha = 1
         changeiconStatus()
-                        scrollerView.scrollToTop()
+        scrollerView.scrollToTop(1445)
+        //1773.5
         
     }
     
@@ -201,13 +204,15 @@ class MapViewController: UIViewController {
     // ASSING A BACKGROUND IMAGE TO THE scroller
     func changeImageScroller(_ name: String) {
         scrollerImage.image = UIImage(named: name)
-        
+        //print(scrollerImage.frame.size.height)
     }
 }
 
 extension UIScrollView {
-    func scrollToTop() {
+    func scrollToTop(_ oDiff:Int) {
         let desiredOffset = CGPoint(x: 0, y: -contentInset.top)
         setContentOffset(desiredOffset, animated: true)
+        print(oDiff, desiredOffset)
+        
     }
 }
