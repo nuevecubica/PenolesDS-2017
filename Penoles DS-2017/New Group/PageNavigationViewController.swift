@@ -38,7 +38,8 @@ class PageNavigationViewController: UIViewController {
     
     var sections:[Section] = [
         Section(name: "Portada", pages: [
-            ImagePage(imageName: "portada"),
+           // ImagePage(imageName: "portada"),
+            CoverPage(theBg: "cover_bg", theFront: "cover_title", theTitle: "cover_front")
             ]),
         
         Section(name: "Perfil de Peñoles", pages: [
