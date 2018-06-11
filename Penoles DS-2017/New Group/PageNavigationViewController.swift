@@ -241,7 +241,7 @@ class PageNavigationViewController: UIViewController {
         showPage(pageNumber: 0, inSection: sender.tag)
         toggleMenu(sender)
     }
-    
+        
     @IBAction func toggleMenu(_ sender: UIButton) {
         NSLayoutConstraint.deactivate([menuConstraint])
         
@@ -286,7 +286,7 @@ class PageNavigationViewController: UIViewController {
     
     func showPage(pageNumber: Int, inSection section: Int) {
         titleLabel.text = sections[section].name
-        
+      
         let newViewController = sections[section].pages[pageNumber].viewController
         let newView = newViewController.view!
         
