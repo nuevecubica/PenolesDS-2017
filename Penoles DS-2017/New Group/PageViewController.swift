@@ -36,6 +36,9 @@ class PageViewController: UIViewController {
     super.viewDidLoad()
 
     scrollView = UIScrollView()
+    scrollView.delegate = self
+    scrollView.minimumZoomScale = 1.0
+    scrollView.maximumZoomScale = 2.0
 
     imageView = UIImageView()
     imageView.contentMode =  .scaleToFill
@@ -61,6 +64,12 @@ class PageViewController: UIViewController {
       imageView.widthAnchor.constraint(equalTo: view.widthAnchor),
       imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: image.size.width / image.size.height)
       ])
+  }
+}
+
+extension PageViewController: UIScrollViewDelegate {
+  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    return imageView
   }
 }
 

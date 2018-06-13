@@ -507,6 +507,42 @@
             </objects>
             <point key="canvasLocation" x="1142" y="119"/>
         </scene>
+        <!--Image Popup View Controller-->
+        <scene sceneID="2A1-P5-kgj">
+            <objects>
+                <viewController storyboardIdentifier="imagePopup" id="Pgi-yM-bzp" customClass="ImagePopupViewController" customModule="Penoles_DS_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aE-vt-YC2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2P-Bq-h4h">
+                                <rect key="frame" x="343" y="216" width="429" height="308"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="j2P-Bq-h4h" firstAttribute="centerX" secondItem="8aE-vt-YC2" secondAttribute="centerX" id="1vo-tH-Zmb"/>
+                            <constraint firstItem="j2P-Bq-h4h" firstAttribute="centerY" secondItem="8aE-vt-YC2" secondAttribute="centerY" id="8hV-x8-cbr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uDc-1f-Q7A"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="T73-xb-hh0" appends="YES" id="hJ2-Q2-xSO"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="j2P-Bq-h4h" id="Ljv-No-aSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rfh-sc-V21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="T73-xb-hh0">
+                    <connections>
+                        <action selector="dismissPopup:" destination="Pgi-yM-bzp" id="ibV-PM-zPP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1139.6484375" y="840.625"/>
+        </scene>
     </scenes>
     <resources>
         <image name="all_unidades_scroll" width="282" height="1445"/>

@@ -89,7 +89,8 @@ class PageNavigationViewController: UIViewController {
             CoverPage(theBg: "desemp_economico_bg", theFront: "desemp_economico_front",theTitle:"desemp_economico_title"),
             //ImagePage(imageName: "des_economico_pag1"),
             ImagePage(imageName: "des_economico_pag2"),
-            ImagePage(imageName: "des_economico_pag3"),
+            //ImagePage(imageName: "des_economico_pag3"),
+            DerrameEconomicoPage(imageName: "des_economico_pag3"),
             ImagePage(imageName: "des_economico_pag4"),
             ImagePage(imageName: "des_economico_pag5"),
             ImagePage(imageName: "des_economico_pag6"),
@@ -204,15 +205,14 @@ class PageNavigationViewController: UIViewController {
         menuConstraint = NSLayoutConstraint(item: menuContainer, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0)
         
         NSLayoutConstraint.activate([menuConstraint])
-        
+
+        setupMenuStackView()
+
+        showPage(pageNumber: 0, inSection: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        setupMenuStackView()
-        
-        showPage(pageNumber: 0, inSection: 0)
     }
     
     func setupMenuStackView() {
