@@ -35,7 +35,7 @@ class PageNavigationViewController: UIViewController {
     @IBOutlet weak var scrollInidcator: UIImageView!
     
     var menuConstraint: NSLayoutConstraint!
-    
+
     var sections:[Section] = [
         Section(name: "Portada", pages: [
            // ImagePage(imageName: "portada"),
@@ -185,6 +185,8 @@ class PageNavigationViewController: UIViewController {
       return collectionView.indexPathsForVisibleItems.first
     }
 
+    weak var lastVisibleCell: PageCollectionViewCell?
+
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -280,6 +282,7 @@ extension PageNavigationViewController: UICollectionViewDataSource, UICollection
 extension PageNavigationViewController: UIScrollViewDelegate {
   func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
     scrollInidcator.isHidden = true
+    lastVisibleCell = collectionView.visibleCells.first as? PageCollectionViewCell
   }
 
   func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -301,11 +304,21 @@ extension PageNavigationViewController: UIScrollViewDelegate {
   func setupForIndexPath(_ indexPath: IndexPath) {
     titleLabel.text = sections[indexPath.section].name
 
-    if let currentCell = collectionView.cellForItem(at: indexPath) as? PageCollectionViewCell, let scrollableVV = currentCell.childViewController as? ScrollablePageViewController {
+    let currentCell = collectionView.cellForItem(at: indexPath) as? PageCollectionViewCell
+
+    if currentCell != lastVisibleCell {
+      if let pageVC = lastVisibleCell?.childViewController as? PageViewController {
+        pageVC.scrollView.zoomScale = 1.0
+      }
+    }
+
+    if let scrollableVV = currentCell?.childViewController as? ScrollablePageViewController {
       scrollInidcator.isHidden = !scrollableVV.showsScrollIndicator
     } else {
       scrollInidcator.isHidden = true
     }
+
+    lastVisibleCell = nil
   }
 }
 
