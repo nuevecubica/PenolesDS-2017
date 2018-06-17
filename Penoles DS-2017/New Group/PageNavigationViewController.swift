@@ -27,7 +27,7 @@ class Section {
 }
 
 class PageNavigationViewController: UIViewController {
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var menuContainer: UIView!
     @IBOutlet weak var menuStackView: UIStackView!
@@ -35,7 +35,7 @@ class PageNavigationViewController: UIViewController {
     @IBOutlet weak var scrollInidcator: UIImageView!
     
     var menuConstraint: NSLayoutConstraint!
-    
+
     var sections:[Section] = [
         Section(name: "Portada", pages: [
            // ImagePage(imageName: "portada"),
@@ -179,43 +179,29 @@ class PageNavigationViewController: UIViewController {
             ]),
         
         ]
-    
-    var currentSection: Int = 0
-    var currentPage: Int = 0
-    
-    var currentVC: UIViewController!
-    var currentView: UIView!
-    
+
     var showingMenu: Bool = false
-    
+
+    var currentIndexPath: IndexPath? {
+      return collectionView.indexPathsForVisibleItems.first
+    }
+
+    weak var lastVisibleCell: PageCollectionViewCell?
+
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
-        self.view.addGestureRecognizer(leftSwipe)
-        
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
-        self.view.addGestureRecognizer(rightSwipe)
-        
-        menuConstraint = NSLayoutConstraint(item: menuContainer, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0)
-        
-        NSLayoutConstraint.activate([menuConstraint])
 
+        menuConstraint = NSLayoutConstraint(item: menuContainer, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint.activate([menuConstraint])
         setupMenuStackView()
 
-        showPage(pageNumber: 0, inSection: 0)
+        setupForIndexPath(IndexPath(item: 0, section: 0))
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
+
     func setupMenuStackView() {
         for view in menuStackView.arrangedSubviews {
             view.removeFromSuperview()
@@ -239,8 +225,11 @@ class PageNavigationViewController: UIViewController {
     }
     
     @IBAction func sectionTapped(_ sender: UIButton) {
-        showPage(pageNumber: 0, inSection: sender.tag)
-        toggleMenu(sender)
+      let indexPath = IndexPath(item: 0, section: sender.tag)
+      collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+      view.layoutIfNeeded()
+      setupForIndexPath(indexPath)
+      toggleMenu(sender)
     }
         
     @IBAction func toggleMenu(_ sender: UIButton) {
@@ -263,75 +252,112 @@ class PageNavigationViewController: UIViewController {
         
         showingMenu = !showingMenu
     }
-    
-    @objc func swipeAction(swipe:UISwipeGestureRecognizer){
-        switch swipe.direction {
-        case .right:
-            let newPage = currentPage - 1
-            if newPage >= 0 { showPage(pageNumber: newPage, inSection: currentSection) }
-            else {
-                let newSection = currentSection - 1
-                if newSection >= 0 { showPage(pageNumber: sections[newSection].pages.count - 1, inSection: newSection) }
-            }
-        case .left:
-            let newPage = currentPage + 1
-            if newPage < sections[currentSection].pages.count { showPage(pageNumber: newPage, inSection: currentSection) }
-            else {
-                let newSection = currentSection + 1
-                if newSection < sections.count { showPage(pageNumber: 0, inSection: newSection) }
-            }
-        default:
-            break
-        }
-    }
-    
-    func showPage(pageNumber: Int, inSection section: Int) {
-        titleLabel.text = sections[section].name
-      
-        let newViewController = sections[section].pages[pageNumber].viewController
-        let newView = newViewController.view!
-        
-        newView.translatesAutoresizingMaskIntoConstraints = false
-        
-        addChildViewController(newViewController)
-        containerView.addSubview(newView)
-        
-        newView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            newView.topAnchor.constraint(equalTo: containerView.topAnchor),
-            newView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
-            newView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            newView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
-            ])
-        
-        newViewController.didMove(toParentViewController: self)
-        
-        newView.alpha = 0.0
-        
-        self.view.layoutIfNeeded()
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            newView.alpha = 1.0
-            self.currentView?.alpha = 0.0
-        }) { (_) in
-            self.currentVC?.willMove(toParentViewController: nil)
-            self.currentView?.removeFromSuperview()
-            self.currentVC?.removeFromParentViewController()
-            
-            self.currentView = newView
-            self.currentVC = newViewController
-            
-            self.currentPage = pageNumber
-            self.currentSection = section
-        }
+}
 
-      if let scrollableVV = newViewController as? ScrollablePageViewController {
-        scrollInidcator.isHidden = !scrollableVV.showsScrollIndicator
-      } else {
-        scrollInidcator.isHidden = true
+extension PageNavigationViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return sections.count
+  }
+
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return sections[section].pages.count
+  }
+
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PageCollectionViewCell", for: indexPath) as! PageCollectionViewCell
+    
+    cell.setupWithPage(sections[indexPath.section].pages[indexPath.item], insideViewController: self)
+
+    return cell
+  }
+
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    return collectionView.bounds.size
+  }
+
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    return 0
+  }
+}
+
+extension PageNavigationViewController: UIScrollViewDelegate {
+  func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    scrollInidcator.isHidden = true
+    lastVisibleCell = collectionView.visibleCells.first as? PageCollectionViewCell
+  }
+
+  func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    if !decelerate { setupForCurrentPage() }
+  }
+
+  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    setupForCurrentPage()
+  }
+
+  func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    setupForCurrentPage()
+  }
+
+  func setupForCurrentPage() {
+    setupForIndexPath(currentIndexPath ?? IndexPath(item: 0, section: 0))
+  }
+
+  func setupForIndexPath(_ indexPath: IndexPath) {
+    titleLabel.text = sections[indexPath.section].name
+
+    let currentCell = collectionView.cellForItem(at: indexPath) as? PageCollectionViewCell
+
+    if currentCell != lastVisibleCell {
+      if let pageVC = lastVisibleCell?.childViewController as? PageViewController {
+        pageVC.scrollView.zoomScale = 1.0
       }
-
     }
-    
+
+    if let scrollableVV = currentCell?.childViewController as? ScrollablePageViewController {
+      scrollInidcator.isHidden = !scrollableVV.showsScrollIndicator
+    } else {
+      scrollInidcator.isHidden = true
+    }
+
+    lastVisibleCell = nil
+  }
+}
+
+class PageCollectionViewCell: UICollectionViewCell {
+  var page: Page?
+  var childViewController: UIViewController?
+  var childView: UIView?
+
+  func setupWithPage(_ page: Page, insideViewController viewController: UIViewController) {
+    self.page = page
+    childViewController = page.viewController
+    childView = childViewController?.view
+
+    guard let childViewController = childViewController, let childView = childView else { return }
+
+    viewController.addChildViewController(childViewController)
+    addSubview(childView)
+
+    childView.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      leadingAnchor.constraint(equalTo: childView.leadingAnchor),
+      trailingAnchor.constraint(equalTo: childView.trailingAnchor),
+      topAnchor.constraint(equalTo: childView.topAnchor),
+      bottomAnchor.constraint(equalTo: childView.bottomAnchor)
+    ])
+
+    childViewController.didMove(toParentViewController: viewController)
+  }
+
+  override func prepareForReuse() {
+    super.prepareForReuse()
+
+    childViewController?.willMove(toParentViewController: nil)
+    childView?.removeFromSuperview()
+    childViewController?.removeFromParentViewController()
+
+    childView = nil
+    childViewController = nil
+  }
 }

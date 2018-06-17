@@ -19,10 +19,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6t4-fB-3Bs">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-ng-MXC">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nkv-wn-9sA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCollectionViewCell" id="c9u-eP-nC9" customClass="PageCollectionViewCell" customModule="Penoles_DS_2017" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3V3-DT-pvr" id="2wA-WS-BjI"/>
+                                    <outlet property="delegate" destination="3V3-DT-pvr" id="gxd-4p-9A9"/>
+                                </connections>
+                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-yn-P0M">
                                 <rect key="frame" x="476" y="0.0" width="72" height="140"/>
                                 <subviews>
@@ -97,15 +117,15 @@
                             <constraint firstItem="U16-qb-453" firstAttribute="trailing" secondItem="4cX-GK-rEU" secondAttribute="trailing" constant="10" id="B0G-l3-3AZ"/>
                             <constraint firstItem="ISJ-yn-P0M" firstAttribute="top" secondItem="nyE-Rk-vwv" secondAttribute="top" placeholder="YES" id="Dkx-u8-8lS"/>
                             <constraint firstItem="ks0-Fu-VGe" firstAttribute="top" secondItem="U16-qb-453" secondAttribute="top" constant="-16" id="DqK-LJ-sNS"/>
+                            <constraint firstAttribute="trailing" secondItem="7yH-ng-MXC" secondAttribute="trailing" id="Gye-CK-bU7"/>
                             <constraint firstItem="U16-qb-453" firstAttribute="bottom" secondItem="4cX-GK-rEU" secondAttribute="bottom" constant="10" id="L3H-We-wpz"/>
                             <constraint firstItem="LJ1-dW-Kpu" firstAttribute="top" secondItem="U16-qb-453" secondAttribute="top" id="OA5-od-nO9"/>
-                            <constraint firstAttribute="trailing" secondItem="6t4-fB-3Bs" secondAttribute="trailing" id="QZv-iP-aV1"/>
+                            <constraint firstAttribute="bottom" secondItem="7yH-ng-MXC" secondAttribute="bottom" id="OVa-e0-una"/>
                             <constraint firstItem="ks0-Fu-VGe" firstAttribute="height" secondItem="LJ1-dW-Kpu" secondAttribute="height" constant="30" id="SUH-JW-HfH"/>
                             <constraint firstItem="U16-qb-453" firstAttribute="trailing" secondItem="ks0-Fu-VGe" secondAttribute="trailing" id="VfI-lN-TIw"/>
                             <constraint firstItem="LJ1-dW-Kpu" firstAttribute="trailing" secondItem="U16-qb-453" secondAttribute="trailing" id="XJv-P2-2Q4"/>
-                            <constraint firstItem="6t4-fB-3Bs" firstAttribute="top" secondItem="nyE-Rk-vwv" secondAttribute="top" id="fru-r2-vvF"/>
-                            <constraint firstAttribute="bottom" secondItem="6t4-fB-3Bs" secondAttribute="bottom" id="hwn-WC-5fK"/>
-                            <constraint firstItem="6t4-fB-3Bs" firstAttribute="leading" secondItem="nyE-Rk-vwv" secondAttribute="leading" id="jUd-LN-Mtw"/>
+                            <constraint firstItem="7yH-ng-MXC" firstAttribute="leading" secondItem="nyE-Rk-vwv" secondAttribute="leading" id="bxX-aP-15b"/>
+                            <constraint firstItem="7yH-ng-MXC" firstAttribute="top" secondItem="nyE-Rk-vwv" secondAttribute="top" id="nlh-bo-0j3"/>
                             <constraint firstItem="ISJ-yn-P0M" firstAttribute="centerX" secondItem="nyE-Rk-vwv" secondAttribute="centerX" id="o0f-zG-pBM"/>
                             <constraint firstItem="ks0-Fu-VGe" firstAttribute="width" secondItem="LJ1-dW-Kpu" secondAttribute="height" multiplier="1:1" constant="30" id="pH9-FS-sQh"/>
                             <constraint firstItem="LJ1-dW-Kpu" firstAttribute="leading" secondItem="U16-qb-453" secondAttribute="leading" id="xBi-ZR-ur8"/>
@@ -115,7 +135,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="containerView" destination="6t4-fB-3Bs" id="zkH-HC-6Td"/>
+                        <outlet property="collectionView" destination="7yH-ng-MXC" id="E2o-ud-qQk"/>
                         <outlet property="menuContainer" destination="ISJ-yn-P0M" id="tA6-wv-4Bc"/>
                         <outlet property="menuStackView" destination="0Pt-LR-tfQ" id="7mh-r9-fNI"/>
                         <outlet property="scrollInidcator" destination="4cX-GK-rEU" id="2Nx-K5-Ba4"/>
