@@ -9,7 +9,7 @@
 
 import UIKit
 
-class manejodelAguaPage: ImagePage {
+class des_amb_4Page: ImagePage {
     override var viewController: UIViewController {
         return manejoDelAguaViewController(image: UIImage(named: imageName)!)
     }

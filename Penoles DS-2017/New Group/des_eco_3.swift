@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DerramaEconomicaPage: ImagePage {
+class des_eco_3Page: ImagePage {
     override var viewController: UIViewController {
         return DerramaEconomicaViewController(image: UIImage(named: imageName)!)
     }

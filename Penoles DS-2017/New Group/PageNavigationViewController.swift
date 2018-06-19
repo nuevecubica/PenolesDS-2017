@@ -87,10 +87,8 @@ class PageNavigationViewController: UIViewController {
         
         Section(name: "Desempeño económico", pages: [
             CoverPage(theBg: "desemp_economico_bg", theFront: "desemp_economico_front",theTitle:"desemp_economico_title"),
-            //ImagePage(imageName: "des_economico_pag1"),
             ImagePage(imageName: "des_economico_pag2"),
-            //ImagePage(imageName: "des_economico_pag3"),
-            DerramaEconomicaPage(imageName: "des_economico_pag3"),
+            des_eco_3Page(imageName: "des_economico_pag3"),
             ImagePage(imageName: "des_economico_pag4"),
             ImagePage(imageName: "des_economico_pag5"),
             ImagePage(imageName: "des_economico_pag6"),
@@ -108,7 +106,7 @@ class PageNavigationViewController: UIViewController {
             ImagePage(imageName: "des_ambiental_pag2"),
             ImagePage(imageName: "des_ambiental_pag3"),
             //ImagePage(imageName: "des_ambiental_pag4"),
-            manejodelAguaPage(imageName: "des_ambiental_pag4"),
+            des_amb_4Page(imageName: "des_ambiental_pag4"),
             ImagePage(imageName: "des_ambiental_pag5"),
             ImagePage(imageName: "des_ambiental_pag6"),
             ImagePage(imageName: "des_ambiental_pag7"),
