@@ -18,7 +18,7 @@ class PageWithButtonsViewController: PageViewController {
   }
 
   func showVideoPopup(videoName: String) {
-    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video", ofType:"mp4")!))
+    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: videoName, ofType:"mp4")!))
     let playerController = AVPlayerViewController()
     playerController.player = player
     present(playerController, animated: true) {
