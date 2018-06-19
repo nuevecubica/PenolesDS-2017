@@ -56,24 +56,21 @@ class PageNavigationViewController: UIViewController {
         
         Section(name: "Gestión de la sustentabilidad", pages: [
             CoverPage(theBg: "gestion_bg", theFront: "gestion_front",theTitle:"gestion_title"),
-            //ImagePage(imageName: "gestion_pag1"),
             ImagePage(imageName: "gestion_pag2"),
             ImagePage(imageName: "gestion_pag3"),
             ImagePage(imageName: "gestion_pag4"),
             ImagePage(imageName: "gestion_pag5"),
             ImagePage(imageName: "gestion_pag6"),
-            ImagePage(imageName: "gestion_pag7"),
+            gestion_7Page(imageName:"gestion_pag7"),
             ]),
         
         Section(name: "Grupos de interés", pages: [
             CoverPage(theBg: "grupos_bg", theFront: "grupos_front",theTitle:"grupos_title"),
-            //ImagePage(imageName: "grupos_pag1"),
             ImagePage(imageName: "grupos_pag2"),
             ]),
         
         Section(name: "Transparencia y cumplimiento", pages: [
             CoverPage(theBg: "transparencia_bg", theFront: "transparencia_front",theTitle:"transparencia_title"),
-            //ImagePage(imageName: "transparencia_pag1"),
             ImagePage(imageName: "transparencia_pag2"),
             ImagePage(imageName: "transparencia_pag3"),
             ImagePage(imageName: "transparencia_pag4"),
@@ -89,7 +86,7 @@ class PageNavigationViewController: UIViewController {
             CoverPage(theBg: "desemp_economico_bg", theFront: "desemp_economico_front",theTitle:"desemp_economico_title"),
             ImagePage(imageName: "des_economico_pag2"),
             des_eco_3Page(imageName: "des_economico_pag3"),
-            ImagePage(imageName: "des_economico_pag4"),
+            des_eco_4Page(imageName: "des_economico_pag4"),
             ImagePage(imageName: "des_economico_pag5"),
             ImagePage(imageName: "des_economico_pag6"),
             ImagePage(imageName: "des_economico_pag7"),
@@ -102,10 +99,10 @@ class PageNavigationViewController: UIViewController {
         
         Section(name: "Desempeño ambiental", pages: [
             CoverPage(theBg: "desemp_ambiental_bg", theFront: "desemp_ambiental_front",theTitle:"desemp_ambiental_title"),
-            ImagePage(imageName: "des_ambiental_pag2"),
+            des_amb_2Page(imageName: "des_ambiental_pag2"),
             ImagePage(imageName: "des_ambiental_pag3"),
             des_amb_4Page(imageName: "des_ambiental_pag4"),
-            ImagePage(imageName: "des_ambiental_pag5"),
+            des_amb_5Page(imageName: "des_ambiental_pag5"),
             des_amb_6Page(imageName: "des_ambiental_pag6"),
             ImagePage(imageName: "des_ambiental_pag7"),
             des_amb_8Page(imageName: "des_ambiental_pag8"),
@@ -115,20 +112,19 @@ class PageNavigationViewController: UIViewController {
         
         Section(name: "Desempeño social", pages: [
             CoverPage(theBg: "desemp_social_bg", theFront: "desemp_social_front",theTitle:"desemp_social_title"),
-            //ImagePage(imageName: "des_social_pag1"),
-            ImagePage(imageName: "des_social_pag2"),
+            des_soc_2Page(imageName:"des_social_pag2"),
             ImagePage(imageName: "des_social_pag3"),
             ImagePage(imageName: "des_social_pag4"),
             ImagePage(imageName: "des_social_pag5"),
             ImagePage(imageName: "des_social_pag6"),
             ImagePage(imageName: "des_social_pag7"),
-            ImagePage(imageName: "des_social_pag8"),
+            des_soc_8Page(imageName:"des_social_pag8"),
             ImagePage(imageName: "des_social_pag9"),
-            ImagePage(imageName: "des_social_pag10"),
+            des_soc_10Page(imageName:"des_social_pag10"),
             ImagePage(imageName: "des_social_pag11"),
             ImagePage(imageName: "des_social_pag12"),
             ImagePage(imageName: "des_social_pag13"),
-            ImagePage(imageName: "des_social_pag14"),
+            des_soc_14Page(imageName:"des_social_pag14"),
             ImagePage(imageName: "des_social_pag15"),
             ImagePage(imageName: "des_social_pag16"),
             ImagePage(imageName: "des_social_pag17"),
