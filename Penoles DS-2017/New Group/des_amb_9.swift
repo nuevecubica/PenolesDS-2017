@@ -1,21 +1,21 @@
 //
-//  des_amb_4.swift
+//  des_amb_9.swift
 //  Penoles DS-2017
 //
-//  Created by alex vaught on 6/14/18.
+//  Created by alex vaught on 6/19/18.
 //  Copyright © 2018 nuevecubica. All rights reserved.
 //
 
 
 import UIKit
 
-class des_amb_4Page: ImagePage {
+class des_amb_9Page: ImagePage {
     override var viewController: UIViewController {
-        return des_amb_4ViewController(image: UIImage(named: imageName)!)
+        return des_amb_9ViewController(image: UIImage(named: imageName)!)
     }
 }
 
-class des_amb_4ViewController: PageWithButtonsViewController {
+class des_amb_9ViewController: PageWithButtonsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,20 +37,20 @@ class des_amb_4ViewController: PageWithButtonsViewController {
         // Image coords divided by 3
         NSLayoutConstraint.activate([
             button_ia.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 853.0 * imageScale),
-            button_ia.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  400.0 * imageScale)
+            button_ia.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  440.0 * imageScale)
             ])
         //**************************************
         //**************************************
-       
+        
     }
     
     //*****************************************
     // PRESS FUNCTIONS
     //*****************************************
     @IBAction func btn_ia_Pressed(_ sender: UIButton) {
-        showImagePopup(image: #imageLiteral(resourceName: "indicie_consumo_agua") )
+        showImagePopup(image: #imageLiteral(resourceName: "indice_ecoeficiencia_residuos") )
         //showVideoPopup(videoName: "video")
     }
-   
+    
 }
 

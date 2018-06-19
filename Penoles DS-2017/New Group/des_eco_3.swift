@@ -1,5 +1,5 @@
 //
-//  DerrameEconomico.swift
+//  des_eco_3.swift
 //  Penoles DS-2017
 //
 //  Created by Pablo Gomez Basanta on 6/13/18.
@@ -10,11 +10,11 @@ import UIKit
 
 class des_eco_3Page: ImagePage {
     override var viewController: UIViewController {
-        return DerramaEconomicaViewController(image: UIImage(named: imageName)!)
+        return des_eco_3ViewController(image: UIImage(named: imageName)!)
     }
 }
 
-class DerramaEconomicaViewController: PageWithButtonsViewController {
+class des_eco_3ViewController: PageWithButtonsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,7 +76,7 @@ class DerramaEconomicaViewController: PageWithButtonsViewController {
             ])
         //*************************************
         //**************************************
-        // Button DERRAMA ECONOMICA
+        // Button DERRAMA ECONOMICA 2017
         //**************************************
         let button_de = UIButton(frame: CGRect())
         //button.setTitle("Blah", for: .normal)
