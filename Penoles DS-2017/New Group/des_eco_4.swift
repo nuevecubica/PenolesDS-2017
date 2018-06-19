@@ -41,8 +41,8 @@ class des_eco_4ViewController: PageWithButtonsViewController {
         */
         // Image coords divided by 3
         NSLayoutConstraint.activate([
-            button_vid.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 880.0 * imageScale),
-            button_vid.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  655.0 * imageScale)
+            button_vid.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 480.0 * imageScale),
+            button_vid.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  620.0 * imageScale)
             ])
         //**************************************
         //**************************************
