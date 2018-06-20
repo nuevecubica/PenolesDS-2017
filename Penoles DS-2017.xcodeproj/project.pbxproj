@@ -15,6 +15,7 @@
 		CB86F7BC20D197EE00B787A5 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB86F7BB20D197EE00B787A5 /* video.mp4 */; };
 		CB86F7BE20D1999D00B787A5 /* PageWithButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86F7BD20D1999D00B787A5 /* PageWithButtonsViewController.swift */; };
 		FA91D4E220C21CD4002FD433 /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91D4E120C21CD4002FD433 /* CoverViewController.swift */; };
+		FAAF366820D9D04F00D9DA85 /* des_social_10_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6820D9A0A2003A5D03 /* des_social_10_vid.mp4 */; };
 		FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59DF209CD42400D55C50 /* AppDelegate.swift */; };
 		FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E3209CD42400D55C50 /* Main.storyboard */; };
 		FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E6209CD42600D55C50 /* Assets.xcassets */; };
@@ -223,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */,
+				FAAF366820D9D04F00D9DA85 /* des_social_10_vid.mp4 in Resources */,
 				FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */,
 				FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */,
 				CB86F7BC20D197EE00B787A5 /* video.mp4 in Resources */,
