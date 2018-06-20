@@ -305,8 +305,8 @@ extension PageNavigationViewController: UIScrollViewDelegate {
       }
     }
 
-    if let scrollableVV = currentCell?.childViewController as? ScrollablePageViewController {
-      scrollInidcator.isHidden = !scrollableVV.showsScrollIndicator
+    if let scrollableVW = currentCell?.childViewController as? ScrollablePageViewController {
+      scrollInidcator.isHidden = !scrollableVW.showsScrollIndicator
     } else {
       scrollInidcator.isHidden = true
     }
