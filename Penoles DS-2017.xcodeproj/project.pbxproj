@@ -12,7 +12,6 @@
 		CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C440520B4FBBA00A4300D /* MapViewController.swift */; };
 		CB86F7B820D191DF00B787A5 /* des_eco_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86F7B720D191DF00B787A5 /* des_eco_3.swift */; };
 		CB86F7BA20D1941600B787A5 /* ImagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86F7B920D1941600B787A5 /* ImagePopupViewController.swift */; };
-		CB86F7BC20D197EE00B787A5 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB86F7BB20D197EE00B787A5 /* video.mp4 */; };
 		CB86F7BE20D1999D00B787A5 /* PageWithButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86F7BD20D1999D00B787A5 /* PageWithButtonsViewController.swift */; };
 		FA91D4E220C21CD4002FD433 /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91D4E120C21CD4002FD433 /* CoverViewController.swift */; };
 		FAAF366820D9D04F00D9DA85 /* des_social_10_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6820D9A0A2003A5D03 /* des_social_10_vid.mp4 */; };
@@ -22,9 +21,11 @@
 		FAAF366C20D9D0B700D9DA85 /* des_amb_02_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6620D99F6B003A5D03 /* des_amb_02_vid.mp4 */; };
 		FAAF366D20D9D0BA00D9DA85 /* des_amb_05_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6220D99EA6003A5D03 /* des_amb_05_vid.mp4 */; };
 		FAAF366E20D9D0BF00D9DA85 /* des_amb_07_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6320D99ED9003A5D03 /* des_amb_07_vid.mp4 */; };
-		FAAF366F20D9D0C200D9DA85 /* des_soc_02_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6720D99F8E003A5D03 /* des_soc_02_vid.mp4 */; };
+		FAAF366F20D9D0C200D9DA85 /* des_social_02_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6720D99F8E003A5D03 /* des_social_02_vid.mp4 */; };
 		FAAF367020D9D0C600D9DA85 /* des_social_08_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6420D99EF8003A5D03 /* des_social_08_vid.mp4 */; };
 		FAAF367120D9D0CC00D9DA85 /* des_social_14_vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FADD7B6920D9A0F0003A5D03 /* des_social_14_vid.mp4 */; };
+		FACA315820DC05A800399946 /* des_soc_30.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA315720DC05A800399946 /* des_soc_30.swift */; };
+		FACA315A20DC117200399946 /* des_soc_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA315920DC117200399946 /* des_soc_13.swift */; };
 		FADC59E0209CD42400D55C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC59DF209CD42400D55C50 /* AppDelegate.swift */; };
 		FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E3209CD42400D55C50 /* Main.storyboard */; };
 		FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC59E6209CD42600D55C50 /* Assets.xcassets */; };
@@ -51,9 +52,10 @@
 		CB1C440520B4FBBA00A4300D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CB86F7B720D191DF00B787A5 /* des_eco_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = des_eco_3.swift; sourceTree = "<group>"; };
 		CB86F7B920D1941600B787A5 /* ImagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePopupViewController.swift; sourceTree = "<group>"; };
-		CB86F7BB20D197EE00B787A5 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		CB86F7BD20D1999D00B787A5 /* PageWithButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageWithButtonsViewController.swift; sourceTree = "<group>"; };
 		FA91D4E120C21CD4002FD433 /* CoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverViewController.swift; sourceTree = "<group>"; };
+		FACA315720DC05A800399946 /* des_soc_30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = des_soc_30.swift; sourceTree = "<group>"; };
+		FACA315920DC117200399946 /* des_soc_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = des_soc_13.swift; sourceTree = "<group>"; };
 		FADC59DC209CD42400D55C50 /* Penoles DS-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penoles DS-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC59DF209CD42400D55C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADC59E4209CD42400D55C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		FADD7B6420D99EF8003A5D03 /* des_social_08_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_social_08_vid.mp4; sourceTree = "<group>"; };
 		FADD7B6520D99F32003A5D03 /* des_eco_03_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_eco_03_vid.mp4; sourceTree = "<group>"; };
 		FADD7B6620D99F6B003A5D03 /* des_amb_02_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_amb_02_vid.mp4; sourceTree = "<group>"; };
-		FADD7B6720D99F8E003A5D03 /* des_soc_02_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_soc_02_vid.mp4; sourceTree = "<group>"; };
+		FADD7B6720D99F8E003A5D03 /* des_social_02_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_social_02_vid.mp4; sourceTree = "<group>"; };
 		FADD7B6820D9A0A2003A5D03 /* des_social_10_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_social_10_vid.mp4; sourceTree = "<group>"; };
 		FADD7B6920D9A0F0003A5D03 /* des_social_14_vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = des_social_14_vid.mp4; sourceTree = "<group>"; };
 		FADD7B6A20D9A15B003A5D03 /* gestion_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestion_7.swift; sourceTree = "<group>"; };
@@ -118,7 +120,9 @@
 				FADD7B7620D9AB5D003A5D03 /* des_soc_2.swift */,
 				FADD7B7220D9A52E003A5D03 /* des_soc_8.swift */,
 				FADD7B7820D9AC60003A5D03 /* des_soc_10.swift */,
+				FACA315920DC117200399946 /* des_soc_13.swift */,
 				FADD7B7A20D9AF5C003A5D03 /* des_soc_14.swift */,
+				FACA315720DC05A800399946 /* des_soc_30.swift */,
 				CB1C440520B4FBBA00A4300D /* MapViewController.swift */,
 				FA91D4E120C21CD4002FD433 /* CoverViewController.swift */,
 				CB86F7B920D1941600B787A5 /* ImagePopupViewController.swift */,
@@ -150,7 +154,6 @@
 				FADC5A28209D1E2D00D55C50 /* videos */,
 				FADC59E3209CD42400D55C50 /* Main.storyboard */,
 				FADC59E6209CD42600D55C50 /* Assets.xcassets */,
-				CB86F7BB20D197EE00B787A5 /* video.mp4 */,
 				FADC59E8209CD42600D55C50 /* LaunchScreen.storyboard */,
 				FADC59EB209CD42600D55C50 /* Info.plist */,
 			);
@@ -166,7 +169,7 @@
 				FADD7B6620D99F6B003A5D03 /* des_amb_02_vid.mp4 */,
 				FADD7B6220D99EA6003A5D03 /* des_amb_05_vid.mp4 */,
 				FADD7B6320D99ED9003A5D03 /* des_amb_07_vid.mp4 */,
-				FADD7B6720D99F8E003A5D03 /* des_soc_02_vid.mp4 */,
+				FADD7B6720D99F8E003A5D03 /* des_social_02_vid.mp4 */,
 				FADD7B6420D99EF8003A5D03 /* des_social_08_vid.mp4 */,
 				FADD7B6820D9A0A2003A5D03 /* des_social_10_vid.mp4 */,
 				FADD7B6920D9A0F0003A5D03 /* des_social_14_vid.mp4 */,
@@ -232,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAF366F20D9D0C200D9DA85 /* des_soc_02_vid.mp4 in Resources */,
+				FAAF366F20D9D0C200D9DA85 /* des_social_02_vid.mp4 in Resources */,
 				FAAF366B20D9D0B300D9DA85 /* des_eco_04_vid.mp4 in Resources */,
 				FADC59EA209CD42600D55C50 /* LaunchScreen.storyboard in Resources */,
 				FAAF366E20D9D0BF00D9DA85 /* des_amb_07_vid.mp4 in Resources */,
@@ -245,7 +248,6 @@
 				FADC59E7209CD42600D55C50 /* Assets.xcassets in Resources */,
 				FAAF367020D9D0C600D9DA85 /* des_social_08_vid.mp4 in Resources */,
 				FADC59E5209CD42400D55C50 /* Main.storyboard in Resources */,
-				CB86F7BC20D197EE00B787A5 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +264,7 @@
 				FA91D4E220C21CD4002FD433 /* CoverViewController.swift in Sources */,
 				FADD7B6B20D9A15B003A5D03 /* gestion_7.swift in Sources */,
 				FADD7B7B20D9AF5C003A5D03 /* des_soc_14.swift in Sources */,
+				FACA315A20DC117200399946 /* des_soc_13.swift in Sources */,
 				FAF5016120D30704002F4B22 /* des_amb_4.swift in Sources */,
 				FADD7B7920D9AC60003A5D03 /* des_soc_10.swift in Sources */,
 				CB86F7B820D191DF00B787A5 /* des_eco_3.swift in Sources */,
@@ -277,6 +280,7 @@
 				FAF4834920D961B200BC539D /* des_eco_10.swift in Sources */,
 				FAF4834F20D97B2F00BC539D /* des_amb_9.swift in Sources */,
 				CB1C440220B4DECE00A4300D /* PageViewController.swift in Sources */,
+				FACA315820DC05A800399946 /* des_soc_30.swift in Sources */,
 				CB1C440620B4FBBA00A4300D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,9 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F4CBL5BY33;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,9 +445,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F4CBL5BY33;
 				INFOPLIST_FILE = "Penoles DS-2017/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

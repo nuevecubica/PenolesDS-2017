@@ -53,7 +53,7 @@ class des_soc_2ViewController: PageWithButtonsViewController {
     // PRESS FUNCTIONS
     //*****************************************
     @IBAction func btn_vid_Pressed(_ sender: UIButton) {
-        showVideoPopup(videoName: "des_soc_02_vid")
+        showVideoPopup(videoName: "des_social_02_vid")
     }
     
 }
